@@ -108,7 +108,7 @@ export default function Home() {
                                         We deliver Best MLM software within 48 hours with dedicated server & android app.
                                     </p>
                                     <div className="links">
-                                        <a href="tel:+918822955023" target="_blank" className="mybtn3 mybtn-light"><span style={{fontWeight: 550}}><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </a>
+                                        <a href="tel:+918822955023" target="_blank" className="mybtn3 mybtn-light"><span style={{fontWeight: "550"}}><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </a>
                                         <a href="https://wa.me/918822955023" target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </a>
                                         <a href="demo_site.html" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </a>
                                     </div>
@@ -143,7 +143,7 @@ export default function Home() {
                             <div className="box1">
                                 <div className="inner-box subscribe-section">
                                     <div style={{textAlign: "center"}}>
-                                        <h3 style={{lineHeight: "2.3rem"}}>Helpline for MLM Software Demo and support <span style="color:#D31027;">+918822955023</span><br /> or fill the form</h3>
+                                        <h3 style={{lineHeight: "2.3rem"}}>Helpline for MLM Software Demo and support <span style={{color:'#D31027'}}>+918822955023</span><br /> or fill the form</h3>
 
                                     </div>
                                     <div className="newsletter-form-area">
@@ -719,9 +719,9 @@ export default function Home() {
                                         </td>
                                         <td className="text-center">
                                             <div className="d-flex">
-                                                <a className="btn btn-primary" style="background-color: #25d366" href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Standard%20MLM%20Plan" target="-blank" role="button">
+                                                <a className="btn btn-primary" style={{backgroundColor: "#25d366"}} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Standard%20MLM%20Plan" target="-blank" role="button">
                                                     <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                <a className="btn btn-primary" style="background-color: #339AF0" href="tel:+918822955023" target="-blank" role="button">
+                                                <a className="btn btn-primary" style={{backgroundColor: "#339AF0"}} href="tel:+918822955023" target="-blank" role="button">
                                                     <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
                                             </div>
                                         </td>
@@ -764,7 +764,7 @@ export default function Home() {
                                             </div>
                                             <div className="col-md-8 col-lg-6 d-flex">
                                                 <div className="right-area">
-                                                    <h2 style="font-size: 2.5rem;">
+                                                    <h2 style={{fontSize: "2.5rem"}}>
                                                         Offer Of this Month
                                                     </h2>
                                                     <h4 className="name">
@@ -820,7 +820,7 @@ export default function Home() {
                                         </div>
 
                                         <div className="edit_style col-12 col-sm-12 col-md-10 col-lg-12">
-                                            <button type="submit" style="" id="submit-btn-2">
+                                            <button type="submit"  id="submit-btn-2">
                                                 <i className="fas fa-phone-volume"></i> &nbsp;<span>Call Me</span>
                                             </button>
                                         </div>
@@ -1038,7 +1038,7 @@ export default function Home() {
             <section className="contact_bottom">
                 <br /><br />
                 <div className="container text-center contact_bottom1">
-                    <h2 style="color: #002440;">Feel Free To Discuss about your Start Up <br /> +91 8822955023</h2>
+                    <h2 style={{color: "#002440 "}} >Feel Free To Discuss about your Start Up <br /> +91 8822955023</h2>
                 </div>
                 <br /><br />
             </section>
@@ -1057,11 +1057,11 @@ export default function Home() {
                                     </a>
                                 </div>
                                 <div className="text">
-                                    <span><i className="fas fa-map-marker-alt" style="color: rgba(234, 223, 18, 0.7);"> Find Us : </i>&emsp;Raheja Mindspace, Hi-tech City, Madhapur, Near DELL, Hyderabad - 500081</span>
+                                    <span><i className="fas fa-map-marker-alt" style={{color: "rgba(234, 223, 18, 0.7)"}}> Find Us : </i>&emsp;Raheja Mindspace, Hi-tech City, Madhapur, Near DELL, Hyderabad - 500081</span>
 
                                 </div>
                                 <div className="text">
-                                    <span><i className="fas fa-map-marker-alt" style="color: rgba(234, 223, 18, 0.7);"> Find Us : </i>&emsp;House No 12, Ajanta Path, Basisthpur, Guwahati, Assam -781028</span>
+                                    <span><i className="fas fa-map-marker-alt" style={{color: "rgba(234, 223, 18, 0.7)"}}> Find Us : </i>&emsp;House No 12, Ajanta Path, Basisthpur, Guwahati, Assam -781028</span>
 
                                 </div>
                                 <p className="footer_line"><i className="fas fa-phone fa-flip-horizontal"></i>&emsp;+91 8822955023</p>
