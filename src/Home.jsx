@@ -156,8 +156,8 @@ export default function Home() {
                                                 <div className="req-edit col-12 col-sm-12 col-md-6 col-lg-4">
                                                     <input type="number" required name="mobile" className="form-control border-red" placeholder="Enter Your Contact Number" />
                                                 </div>
-                                                <div className="col-12 col-sm-12 col-md-6 col-lg-3" style="margin-bottom: 25px;">
-                                                    <button type="submit" style="" id="submit-btn-1">
+                                                <div className="col-12 col-sm-12 col-md-6 col-lg-3" style={{marginBottom: "25px"}}>
+                                                    <button type="submit"   id="submit-btn-1">
                                                         <span>Request Demo</span> <i className="far fa-paper-plane"></i>
                                                     </button>
                                                 </div>
@@ -181,7 +181,7 @@ export default function Home() {
 
                         <div className="col-lg-5 d-flex">
                             <div className="about-img">
-                                <img src="img/dashbord/1.png" alt="" style="max-width: 20rem;" />
+                                <img src="img/dashbord/1.png" alt="" style={{maxWidth: "20rem"}} />
                             </div>
                         </div>
 
@@ -669,7 +669,7 @@ export default function Home() {
                                         <td className="text-center">SSL Certificate</td>
                                     </tr>
                                     <tr>
-                                        <td className="text-center"><i className="fas fa-times" style="color: #D31027;"></i></td>
+                                        <td className="text-center"><i className="fas fa-times" style={{color: "#D31027"}}></i></td>
                                         <td className="text-center">Promotional Tools</td>
                                         <td className="text-center">Promotional Tools</td>
                                     </tr>
@@ -684,7 +684,7 @@ export default function Home() {
                                         <td className="text-center">Admin Panel/Member Panel</td>
                                     </tr>
                                     <tr>
-                                        <td className="text-center"><i className="fas fa-times" style="color: #D31027;"></i></td>
+                                        <td className="text-center"><i className="fas fa-times" style={{color: "#D31027"}}></i></td>
                                         <td className="text-center">Basic SEO (1 Month)</td>
                                         <td className="text-center">Basic SEO (3 Month)</td>
                                     </tr>
@@ -701,8 +701,8 @@ export default function Home() {
                                         <td className="text-center">Free Maintenance*</td>
                                     </tr>
                                     <tr>
-                                        <td className="text-center"><i className="fas fa-times" style="color: #D31027;"></i></td>
-                                        <td className="text-center"><i className="fas fa-times" style="color: #D31027;"></i></td>
+                                        <td className="text-center"><i className="fas fa-times" style={{color: "#D31027"}}></i></td>
+                                        <td className="text-center"><i className="fas fa-times" style={{color: "#D31027"}}></i></td>
                                         <td className="text-center">Payment Gateway/ IMPS Integration</td>
                                     </tr>
 
@@ -711,9 +711,9 @@ export default function Home() {
                                     <tr>
                                         <td className="text-center">
                                             <div className="d-flex">
-                                                <a className="btn btn-primary" style="background-color: #25d366" href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Basic%20MLM%20Plan" target="-blank" role="button">
+                                                <a className="btn btn-primary" style={{backgroundColor: "#25d366"}} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Basic%20MLM%20Plan" target="-blank" role="button">
                                                     <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                <a className="btn btn-primary" style="background-color: #339AF0" href="tel:+918822955023" target="-blank" role="button">
+                                                <a className="btn btn-primary" style={{backgroundColor: "#339AF0"}} href="tel:+918822955023" target="-blank" role="button">
                                                     <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
                                             </div>
                                         </td>
