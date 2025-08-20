@@ -55,10 +55,10 @@ $(function ($) {
         });
 
     //scrollspy menu
-    $body.scrollspy({
-        target: '#mainmenu',
-        offset: 100
-    });
+    // $body.scrollspy({
+    //     target: '#mainmenu',
+    //     offset: 100
+    // });
     //   magnific popup activation
     $('.video-play-btn').magnificPopup({
         type: 'video'
