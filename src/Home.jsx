@@ -10,20 +10,19 @@ import "../public/css/responsive.css"
 import "../public/css/custom.css"
 import { useEffect } from "react"
 
+import img1 from "../public/images/shape-pattern.png"
+import f2 from "./assets/img/dashbord/f2.png"
+ 
 export default function Home() {
+
+    const imgUrl = "./assets/images/";
     useEffect(() => {
 
     }, [])
 
     return (
         <div>
-
-
-
-
-
-            {/* <!-- ====================header ========================--> */}
-            {/* <!-- Navebar Area start --> */}
+ 
             <header className="navigation">
                 <div className="container">
                     <div className="row">
@@ -92,11 +91,11 @@ export default function Home() {
                     </div>
                 </div>
             </header>
-            {/* <!-- Navebar Area End --> */}
+           
 
             {/* <!-- ================Hero Area Start======================== --> */}
             <div id="home" className="hero-area">
-                <img className="shape" src="assets/images/shape-pattern.png" alt="background shape image" />
+                <img className="shape" src={img1} alt="background shape image" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 d-flex align-self-center">
@@ -132,7 +131,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <img className="img-fluid img" src="img/dashbord/f2.png" alt="mlm softwere dashbord" />
+                                <img className="img-fluid img" src={f2} alt="mlm softwere dashbord" />
                             </div>
                         </div>
                     </div>
