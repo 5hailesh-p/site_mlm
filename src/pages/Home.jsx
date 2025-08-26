@@ -1,8 +1,8 @@
 
 import { useEffect } from "react"
 
-import img1 from "./assets/images/shape-pattern.png"
-import f2 from "./assets/img/dashbord/f2.png"
+import img1 from "../assets/images/shape-pattern.png"
+import f2 from "../assets/img/dashbord/f2.png"
 import { Header } from "../compo/Header"
 import Footer from "../compo/Footer"
 

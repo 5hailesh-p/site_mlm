@@ -17,14 +17,14 @@ export const Header = () => {
                                 <div className="collapse navbar-collapse" id="mainmenu">
                                     <ul className="navbar-nav ml-auto">
                                         <li className="nav-item active">
-                                            <a className="nav-link" href="index-2.html">Home</a>
+                                            <a className="nav-link" href="/">Home</a>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <a className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Company
                                             </a>
                                             <div className="dropdown-menu">
-                                                <a className="dropdown-item" href="about.html"><i className="fas fa-chevron-right"></i> About Us</a>
+                                                <a className="dropdown-item" href="/about"><i className="fas fa-chevron-right"></i> About Us</a>
                                                 <a className="dropdown-item" href="client.html"><i className="fas fa-chevron-right"></i>Clients</a>
                                                 <a className="dropdown-item" href="feature.html"><i className="fas fa-chevron-right"></i>Features</a>
                                             </div>
