@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from '../compo/Header';
 import Footer from '../compo/Footer';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -13,13 +14,13 @@ const Contact = () => {
                             <h4 className="title">Contact Us</h4>
                             <ul className="breadcrumb-list">
                                 <li>
-                                    <a href="/"><i className="fas fa-home"></i> Home</a>
+                                    <Link to="/"><i className="fas fa-home"></i> Home</Link>
                                 </li>
                                 <li>
                                     <span><i className="fas fa-chevron-right"></i></span>
                                 </li>
                                 <li>
-                                    <a href="/contact">Contact Us</a>
+                                    <Link to="/contact">Contact Us</Link>
                                 </li>
                             </ul>
                         </div>

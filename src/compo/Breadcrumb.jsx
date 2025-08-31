@@ -12,16 +12,16 @@ const Breadcrumb = (props) => {
                             </h4>
                             <ul className="breadcrumb-list">
                                 <li>
-                                    <a href="index-2.html">
+                                    <Link href="index-2.html">
                                         <i className="fas fa-home"></i>
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <span><i className="fas fa-chevron-right"></i> </span>
                                 </li>
                                 <li>
-                                    <a href="#">{props.title}</a>
+                                    <Link to="#">{props.title}</Link>
                                 </li>
                             </ul>
                         </div>
