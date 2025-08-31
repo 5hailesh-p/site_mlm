@@ -591,7 +591,7 @@ const Clients = () => {
 
   <section className="breadcrumb-area">
     <div className="container text-center">
-      <h2 style={{color: "#fff", fontSize: "2.5rem"}}>Call & Whatsapp &emsp;  +91 8822955023</h2>
+      <h2 style={{color: "#fff", fontSize: "2.5rem"}}>Call & Whatsapp &emsp;  { import.meta.env.VITE_SITE_CONTACT}</h2>
     </div>
     <br/><br/>
   </section>

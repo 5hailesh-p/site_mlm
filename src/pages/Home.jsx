@@ -5,8 +5,7 @@ import { Header } from "../compo/Header"
 import Footer from "../compo/Footer"
 
 export default function Home() {
-
-    const imgUrl = "./assets/images/";
+ 
     useEffect(() => {
 
     }, [])
@@ -35,9 +34,9 @@ export default function Home() {
                                             We deliver Best MLM software within 48 hours with dedicated server & android app.
                                         </p>
                                         <div className="links">
-                                            <a href="tel:+918822955023" target="_blank" className="mybtn3 mybtn-light"><span style={{ fontWeight: "550" }}><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </a>
-                                            <a href="https://wa.me/918822955023" target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </a>
-                                            <a href="demo_site.html" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </a>
+                                            <a href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank" className="mybtn3 mybtn-light"><span style={{ fontWeight: "550" }}><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </a>
+                                            <a href={import.meta.env.VITE_WHATSAPP_URL || "#"} target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </a>
+                                            <a href="#" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </a>
                                         </div>
 
                                     </div>
@@ -631,7 +630,7 @@ export default function Home() {
                                                 <div className="d-flex">
                                                     <a className="btn btn-primary" style={{ backgroundColor: "#25d366" }} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Basic%20MLM%20Plan" target="-blank" role="button">
                                                         <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href="tel:+918822955023" target="-blank" role="button">
+                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
                                                         <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
                                                 </div>
                                             </td>
@@ -639,7 +638,7 @@ export default function Home() {
                                                 <div className="d-flex">
                                                     <a className="btn btn-primary" style={{ backgroundColor: "#25d366" }} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Standard%20MLM%20Plan" target="-blank" role="button">
                                                         <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href="tel:+918822955023" target="-blank" role="button">
+                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
                                                         <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
                                                 </div>
                                             </td>
@@ -647,7 +646,7 @@ export default function Home() {
                                                 <div className="d-flex">
                                                     <a className="btn btn-primary" style={{ backgroundColor: "#25d366" }} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Premium%20MLM%20Plan" target="-blank" role="button">
                                                         <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href="tel:+918822955023" target="-blank" role="button">
+                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
                                                         <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
                                                 </div>
                                             </td>

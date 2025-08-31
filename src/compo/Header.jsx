@@ -9,7 +9,7 @@ export const Header = () => {
                         <div className="col-lg-12 p-0">
                             <nav className="navbar navbar-expand-lg navbar-light">
                                 <a className="navbar-brand" href="/">
-                                    <img src="img/our_logo/2a.png" alt="" />
+                                    <img src="img/our_logo/logo.png" alt={import.meta.env.VITE_SITE_NAME} />
                                 </a>
                                 <button
                                     className="navbar-toggler"
@@ -67,7 +67,7 @@ export const Header = () => {
                                         </li>
 
                                         <li className="nav-item nav-border">
-                                            <a className="nav-link" href="tel:+918822955023" target="_blank"><span><i className="fas fa-phone-volume"></i>&nbsp;+918822955023</span></a>
+                                            <a className="nav-link" href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank"><span><i className="fas fa-phone-volume"></i>&nbsp;{ import.meta.env.VITE_SITE_CONTACT}</span></a>
                                         </li>
                                     </ul>
                                 </div>

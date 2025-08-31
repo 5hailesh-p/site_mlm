@@ -78,7 +78,7 @@ const Contact = () => {
                                     <div className="content">
                                         <p>info@codechroma.com</p>
                                         <p>codechromaindia@gmail.com</p>
-                                        <p>+91 8822955023</p>
+                                        <p>{ import.meta.env.VITE_SITE_CONTACT}</p>
                                     </div>
                                 </div>
                             </div>
