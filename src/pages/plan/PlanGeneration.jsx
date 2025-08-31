@@ -1,13 +1,17 @@
-
+import React from 'react'
 import { Header } from '../../compo/Header'
-import Footer from '../../compo/Footer'
 import Breadcrumb from '../../compo/Breadcrumb'
+import Footer from '../../compo/Footer'
 
-const PlanMatrix = () => {
+const PlanGeneration = () => {
     return (
         <>
+
+
             <Header />
-            <Breadcrumb title={" Matrix Plan"} />
+
+            <Breadcrumb title={"Generation Plan"} />
+
             <section className="blog-page1 single-blog-area">
                 <div className="container">
                     <div className="row">
@@ -16,18 +20,18 @@ const PlanMatrix = () => {
                                 <div className="content">
                                     <a>
                                         <h4 className="title">
-                                            <span style={{ color: "#970810" }}>Matrix MLM Plan</span>
+                                            <span style={{ color: "#970810" }}>Generation MLM Plan</span>
                                         </h4>
                                     </a>
                                     <div className="text-area">
                                         <div className="row">
                                             <div className="col-lg-7 col-md-7 col-sm-12">
                                                 <p>
-                                                    Matrix MLM plan has a structure with fixed no. of rows and columns as the name suggests.
+                                                    Generation MLM Plan has single level and all members or new joining are arranged in a single downline without any widths.
                                                 </p>
 
                                                 <h3>
-                                                    Awesome Features For Matrix MLM Software
+                                                    Awesome Features For Generation MLM Software
                                                 </h3>
                                                 <br />
                                                 <ul>
@@ -57,10 +61,6 @@ const PlanMatrix = () => {
                                                     </li>
 
                                                     <li>
-                                                        <p><i className="far fa-hand-point-right"></i>Customizable width and height (WxH).</p>
-                                                    </li>
-
-                                                    <li>
                                                         <p><i className="far fa-hand-point-right"></i>Fastest technical support (24*7)</p>
                                                     </li>
 
@@ -69,7 +69,7 @@ const PlanMatrix = () => {
                                             </div>
                                             <div className="col-lg-1"></div>
                                             <div className="col-lg-4 col-md-5 col-sm-12">
-                                                <img src="/img/plan/p3.png" alt="Binary tree codechroma" />
+                                                <img src="/img/plan/p2.png" alt="Binary tree codechroma" />
                                             </div>
                                         </div>
 
@@ -85,17 +85,14 @@ const PlanMatrix = () => {
                                 </div>
                             </div>
 
+
                         </div>
                     </div>
                 </div>
             </section>
-
-
             <Footer />
-
-
         </>
     )
 }
 
-export default PlanMatrix
+export default PlanGeneration

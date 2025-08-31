@@ -9,6 +9,13 @@ import Clients from './pages/Clients';
 import Features from './pages/Features';
 import PlanBinary from './pages/plan/PlanBinary';
 import PlanMatrix from './pages/plan/PlanMatrix';
+import PlanAutoPool from './pages/plan/PlanAutoPool';
+import PlanSingleLeg from './pages/plan/PlanSingleLeg';
+import PlanGeneration from './pages/plan/PlanGeneration';
+import PlanCrowdFunding from './pages/plan/PlanCrowdFunding';
+import PlanCryptoCurrency from './pages/plan/PlanCryptoCurrency';
+import PlanAdView from './pages/plan/PlanAdView';
+import PlanBoard from './pages/plan/PlanBoard';
 
 function App() {
 
@@ -21,8 +28,15 @@ function App() {
         <Route path='/feature' element={<Features />} />
         <Route path='/contact' element={<Contact />} />
 
-        <Route path='/plan/binary' element={<PlanBinary />} />
+        <Route path='/plan/binary' element={<PlanBinary  />} />
         <Route path='/plan/matrix' element={<PlanMatrix />} />
+        <Route path='/plan/singleleg' element={<PlanSingleLeg />} />
+        <Route path='/plan/autopool' element={<PlanAutoPool />} />
+        <Route path='/plan/generation' element={<PlanGeneration />} />
+        <Route path='/plan/crowdfunding' element={<PlanCrowdFunding />} />
+        <Route path='/plan/cryptocurrency' element={<PlanCryptoCurrency />} />
+        <Route path='/plan/adview' element={<PlanAdView />} />
+        <Route path='/plan/board' element={<PlanBoard />} />
       </Routes>
     </BrowserRouter>
 

@@ -51,14 +51,14 @@ export const Header = () => {
                                             </a>
                                             <div className="dropdown-menu">
                                                 <a className="dropdown-item" href="/plan/binary"><i className="fas fa-chevron-right"></i> Binary Plan</a>
-                                                <a className="dropdown-item" href="/plan/matrix"><i className="fas fa-chevron-right"></i>Generation Plan</a>
+                                                <a className="dropdown-item" href="/plan/generation"><i className="fas fa-chevron-right"></i>Generation Plan</a>
                                                 <a className="dropdown-item" href="/plan/matrix"><i className="fas fa-chevron-right"></i>Matrix Plan</a>
-                                                <a className="dropdown-item" href="plan-single-leg.html"><i className="fas fa-chevron-right"></i>Single Leg Plan</a>
-                                                <a className="dropdown-item" href="plan-board.html"><i className="fas fa-chevron-right"></i>Board Plan</a>
-                                                <a className="dropdown-item" href="plan-autopool.html"><i className="fas fa-chevron-right"></i>Autopool Plan</a>
-                                                <a className="dropdown-item" href="plan-crowd-funding.html"><i className="fas fa-chevron-right"></i>Crowd Funding Plan</a>
-                                                <a className="dropdown-item" href="plan-cryptocurrency.html"><i className="fas fa-chevron-right"></i>Cryptocurrency Plan</a>
-                                                <a className="dropdown-item" href="plan-ad-view.html"><i className="fas fa-chevron-right"></i>Ad View MLM Plan</a>
+                                                <a className="dropdown-item" href="/plan/singleleg"><i className="fas fa-chevron-right"></i>Single Leg Plan</a>
+                                                <a className="dropdown-item" href="/plan/board"><i className="fas fa-chevron-right"></i>Board Plan</a>
+                                                <a className="dropdown-item" href="/plan/autopool"><i className="fas fa-chevron-right"></i>Autopool Plan</a>
+                                                <a className="dropdown-item" href="/plan/crowdfunding"><i className="fas fa-chevron-right"></i>Crowd Funding Plan</a>
+                                                <a className="dropdown-item" href="/plan/cryptocurrency"><i className="fas fa-chevron-right"></i>Cryptocurrency Plan</a>
+                                                <a className="dropdown-item" href="/plan/adview"><i className="fas fa-chevron-right"></i>Ad View MLM Plan</a>
                                             </div>
                                         </li>
 

@@ -1,33 +1,35 @@
-
+import React from 'react'
 import { Header } from '../../compo/Header'
-import Footer from '../../compo/Footer'
 import Breadcrumb from '../../compo/Breadcrumb'
+import Footer from '../../compo/Footer'
 
-const PlanMatrix = () => {
+const PlanAutoPool = () => {
     return (
         <>
             <Header />
-            <Breadcrumb title={" Matrix Plan"} />
+
+            <Breadcrumb title={"Autopool Plan"} />
+
             <section className="blog-page1 single-blog-area">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="single-blog-details">
                                 <div className="content">
-                                    <a>
+                                    <a href="#">
                                         <h4 className="title">
-                                            <span style={{ color: "#970810" }}>Matrix MLM Plan</span>
+                                            <span style={{ color: "#970810" }}>Autopool MLM Plan</span>
                                         </h4>
                                     </a>
                                     <div className="text-area">
                                         <div className="row">
                                             <div className="col-lg-7 col-md-7 col-sm-12">
                                                 <p>
-                                                    Matrix MLM plan has a structure with fixed no. of rows and columns as the name suggests.
+                                                    Autopool MLM plan is a combination of working and non-working structures. In this plan after completion of one pool structure the member is automatically upgraded to the next pool.
                                                 </p>
 
                                                 <h3>
-                                                    Awesome Features For Matrix MLM Software
+                                                    Awesome Features For Autopool MLM Software
                                                 </h3>
                                                 <br />
                                                 <ul>
@@ -56,9 +58,7 @@ const PlanMatrix = () => {
                                                         <p><i className="far fa-hand-point-right"></i>Multiple Compensations.</p>
                                                     </li>
 
-                                                    <li>
-                                                        <p><i className="far fa-hand-point-right"></i>Customizable width and height (WxH).</p>
-                                                    </li>
+
 
                                                     <li>
                                                         <p><i className="far fa-hand-point-right"></i>Fastest technical support (24*7)</p>
@@ -69,7 +69,7 @@ const PlanMatrix = () => {
                                             </div>
                                             <div className="col-lg-1"></div>
                                             <div className="col-lg-4 col-md-5 col-sm-12">
-                                                <img src="/img/plan/p3.png" alt="Binary tree codechroma" />
+                                                <img src="/img/plan/p6.png" alt="tree codechroma" />
                                             </div>
                                         </div>
 
@@ -85,17 +85,15 @@ const PlanMatrix = () => {
                                 </div>
                             </div>
 
+
                         </div>
                     </div>
                 </div>
             </section>
-
-
             <Footer />
-
 
         </>
     )
 }
 
-export default PlanMatrix
+export default PlanAutoPool
