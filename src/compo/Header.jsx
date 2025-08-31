@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 export const Header = () => {
@@ -8,10 +9,10 @@ export const Header = () => {
                     <div className="row">
                         <div className="col-lg-12 p-0">
                             <nav className="navbar navbar-expand-lg navbar-light">
-                                <a className="navbar-brand" href="/">
+                                <Link  className="navbar-brand" to="/">
                                     <img src="https://tracequill.com/assets/img/logoclr.png" alt={import.meta.env.VITE_SITE_NAME} />
                                     {/* <img src="img/our_logo/logo.png" alt={import.meta.env.VITE_SITE_NAME} /> */}
-                                </a>
+                                </Link>
                                 <button
                                     className="navbar-toggler"
                                     type="button"
@@ -26,49 +27,49 @@ export const Header = () => {
                                 <div className="collapse navbar-collapse" id="mainmenu">
                                     <ul className="navbar-nav ml-auto">
                                         <li className="nav-item active">
-                                            <a className="nav-link" href="/">Home</a>
+                                            <Link className="nav-link" to="/">Home</Link>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <Link className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Company
-                                            </a>
+                                            </Link>
                                             <div className="dropdown-menu">
-                                                <a className="dropdown-item" href="/about"><i className="fas fa-chevron-right"></i> About Us</a>
-                                                <a className="dropdown-item" href="/clients"><i className="fas fa-chevron-right"></i>Clients</a>
-                                                <a className="dropdown-item" href="/feature"><i className="fas fa-chevron-right"></i>Features</a>
+                                                <Link className="dropdown-item" to="/about"><i className="fas fa-chevron-right"></i> About Us</Link>
+                                                <Link className="dropdown-item" to="/clients"><i className="fas fa-chevron-right"></i>Clients</Link>
+                                                <Link className="dropdown-item" to="/feature"><i className="fas fa-chevron-right"></i>Features</Link>
                                             </div>
                                         </li>
                                         {/* <li className="nav-item">
-                                            <a className="nav-link" href="demo_site.html">Demo</a>
+                                            <Link className="nav-link" to="demo_site.html">Demo</Link>
                                         </li> */}
 
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/#pricing_section">Pricing</a>
+                                            <Link className="nav-link" to="/#pricing_section">Pricing</Link>
                                         </li>
 
                                         <li className="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <Link className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 MLM Plans
-                                            </a>
+                                            </Link>
                                             <div className="dropdown-menu">
-                                                <a className="dropdown-item" href="/plan/binary"><i className="fas fa-chevron-right"></i> Binary Plan</a>
-                                                <a className="dropdown-item" href="/plan/generation"><i className="fas fa-chevron-right"></i>Generation Plan</a>
-                                                <a className="dropdown-item" href="/plan/matrix"><i className="fas fa-chevron-right"></i>Matrix Plan</a>
-                                                <a className="dropdown-item" href="/plan/singleleg"><i className="fas fa-chevron-right"></i>Single Leg Plan</a>
-                                                <a className="dropdown-item" href="/plan/board"><i className="fas fa-chevron-right"></i>Board Plan</a>
-                                                <a className="dropdown-item" href="/plan/autopool"><i className="fas fa-chevron-right"></i>Autopool Plan</a>
-                                                <a className="dropdown-item" href="/plan/crowdfunding"><i className="fas fa-chevron-right"></i>Crowd Funding Plan</a>
-                                                <a className="dropdown-item" href="/plan/cryptocurrency"><i className="fas fa-chevron-right"></i>Cryptocurrency Plan</a>
-                                                <a className="dropdown-item" href="/plan/adview"><i className="fas fa-chevron-right"></i>Ad View MLM Plan</a>
+                                                <Link className="dropdown-item" to="/plan/binary"><i className="fas fa-chevron-right"></i> Binary Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/generation"><i className="fas fa-chevron-right"></i>Generation Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/matrix"><i className="fas fa-chevron-right"></i>Matrix Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/singleleg"><i className="fas fa-chevron-right"></i>Single Leg Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/board"><i className="fas fa-chevron-right"></i>Board Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/autopool"><i className="fas fa-chevron-right"></i>Autopool Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/crowdfunding"><i className="fas fa-chevron-right"></i>Crowd Funding Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/cryptocurrency"><i className="fas fa-chevron-right"></i>Cryptocurrency Plan</Link>
+                                                <Link className="dropdown-item" to="/plan/adview"><i className="fas fa-chevron-right"></i>Ad View MLM Plan</Link>
                                             </div>
                                         </li>
 
                                         <li className="nav-item">
-                                            <a className="nav-link" href="/contact">Contact Us</a>
+                                            <Link className="nav-link" to="/contact">Contact Us</Link>
                                         </li>
 
                                         <li className="nav-item nav-border">
-                                            <a className="nav-link" href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank"><span><i className="fas fa-phone-volume"></i>&nbsp;{ import.meta.env.VITE_SITE_CONTACT}</span></a>
+                                            <Link className="nav-link" to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank"><span><i className="fas fa-phone-volume"></i>&nbsp;{ import.meta.env.VITE_SITE_CONTACT}</span></Link>
                                         </li>
                                     </ul>
                                 </div>

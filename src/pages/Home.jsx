@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 import { useEffect } from "react"
  
 import { Header } from "../compo/Header"
@@ -34,9 +34,9 @@ export default function Home() {
                                             We deliver Best MLM software within 48 hours with dedicated server & android app.
                                         </p>
                                         <div className="links">
-                                            <a href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank" className="mybtn3 mybtn-light"><span style={{ fontWeight: "550" }}><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </a>
-                                            <a href={import.meta.env.VITE_WHATSAPP_URL || "#"} target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </a>
-                                            <a href="#" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </a>
+                                            <Link to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank" className="mybtn3 mybtn-light"><span style={{ fontWeight: "550" }}><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </Link>
+                                            <Link to={import.meta.env.VITE_WHATSAPP_URL || "#"} target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </Link>
+                                            <Link to="#" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </Link>
                                         </div>
 
                                     </div>
@@ -113,79 +113,79 @@ export default function Home() {
                                     <ul className="feature-list">
 
                                         <li className="text-center plan_boder">
-                                            <a href="plan-binary.html">
+                                            <Link to="plan-binary.html">
                                                 <span>1</span>
                                                 <div className="content">
                                                     <h4>Binary Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
 
                                         <li className="text-center plan_boder">
-                                            <a href="plan-generation.html">
+                                            <Link to="plan-generation.html">
                                                 <span>2</span>
                                                 <div className="content">
                                                     <h4>Generation Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
 
                                         <li className="text-center plan_boder">
-                                            <a href="plan-matrix.html">
+                                            <Link to="plan-matrix.html">
                                                 <span>3</span>
                                                 <div className="content">
                                                     <h4>Matrix Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
 
                                         <li className="text-center plan_boder">
-                                            <a href="plan-single-leg.html">
+                                            <Link to="plan-single-leg.html">
                                                 <span>5</span>
                                                 <div className="content">
                                                     <h4>Single Leg Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="text-center plan_boder">
-                                            <a href="plan-board.html">
+                                            <Link to="plan-board.html">
                                                 <span>6</span>
                                                 <div className="content">
                                                     <h4>Board Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="text-center plan_boder">
-                                            <a href="plan-autopool.html">
+                                            <Link to="plan-autopool.html">
                                                 <span>7</span>
                                                 <div className="content">
                                                     <h4>Autopool Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="text-center plan_boder">
-                                            <a href="plan-crowd-funding.html">
+                                            <Link to="plan-crowd-funding.html">
                                                 <span>8</span>
                                                 <div className="content">
                                                     <h4>Crowd Funding Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="text-center plan_boder">
-                                            <a href="plan-cryptocurrency.html">
+                                            <Link to="plan-cryptocurrency.html">
                                                 <span>4</span>
                                                 <div className="content">
                                                     <h4>Cryptocurrency Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="text-center plan_boder">
-                                            <a href="plan-ad-view.html">
+                                            <Link to="plan-ad-view.html">
                                                 <span>9</span>
                                                 <div className="content">
                                                     <h4>Ad View MLM Plan</h4>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -270,9 +270,9 @@ export default function Home() {
                                     <div className="feature-box feature-box1">
                                         <div className="details">
                                             <h4>
-                                                <a className="title">
+                                                <Link className="title">
                                                     100% Calculation<br />Accuracy
-                                                </a>
+                                                </Link>
                                             </h4>
                                         </div>
                                         <div className="icon-area">
@@ -285,9 +285,9 @@ export default function Home() {
                                     <div className="feature-box feature-box1">
                                         <div className="details">
                                             <h4>
-                                                <a className="title">
+                                                <Link className="title">
                                                     Business Analytics<br />Report
-                                                </a>
+                                                </Link>
                                             </h4>
                                         </div>
                                         <div className="icon-area">
@@ -300,9 +300,9 @@ export default function Home() {
                                     <div className="feature-box feature-box1">
                                         <div className="details">
                                             <h4>
-                                                <a className="title">
+                                                <Link className="title">
                                                     Real Time<br />Calculation
-                                                </a>
+                                                </Link>
                                             </h4>
                                         </div>
                                         <div className="icon-area">
@@ -315,8 +315,8 @@ export default function Home() {
                                     <div className="feature-box feature-box1">
                                         <div className="details">
                                             <h4>
-                                                <a className="title">
-                                                    Graphical  Tree</a>
+                                                <Link className="title">
+                                                    Graphical  Tree</Link>
                                             </h4>
                                         </div>
                                         <div className="icon-area">
@@ -329,9 +329,9 @@ export default function Home() {
                                     <div className="feature-box feature-box1">
                                         <div className="details">
                                             <h4>
-                                                <a className="title">
+                                                <Link className="title">
                                                     E-mail & SMS<br />Notifications
-                                                </a>
+                                                </Link>
                                             </h4>
                                         </div>
                                         <div className="icon-area">
@@ -357,7 +357,7 @@ export default function Home() {
                                         </div>
                                         <div className="details">
                                             <h4>
-                                                <a className="title">Search Engine Optimization (SEO)</a>
+                                                <Link className="title">Search Engine Optimization (SEO)</Link>
                                             </h4>
                                         </div>
                                     </div>
@@ -369,7 +369,7 @@ export default function Home() {
                                         </div>
                                         <div className="details">
                                             <h4>
-                                                <a className="title">100% Data<br /> Security </a>
+                                                <Link className="title">100% Data<br /> Security </Link>
                                             </h4>
                                         </div>
                                     </div>
@@ -381,7 +381,7 @@ export default function Home() {
                                         </div>
                                         <div className="details">
                                             <h4>
-                                                <a className="title">Data<br /> Backup </a>
+                                                <Link className="title">Data<br /> Backup </Link>
                                             </h4>
                                         </div>
                                     </div>
@@ -394,7 +394,7 @@ export default function Home() {
                                         </div>
                                         <div className="details">
                                             <h4>
-                                                <a className="title">Internal<br />Messaging System </a>
+                                                <Link className="title">Internal<br />Messaging System </Link>
                                             </h4>
                                         </div>
                                     </div>
@@ -407,7 +407,7 @@ export default function Home() {
                                         </div>
                                         <div className="details">
                                             <h4>
-                                                <a className="title">Multiple<br />Currency </a>
+                                                <Link className="title">Multiple<br />Currency </Link>
                                             </h4>
                                         </div>
                                     </div>
@@ -628,26 +628,26 @@ export default function Home() {
                                         <tr>
                                             <td className="text-center">
                                                 <div className="d-flex">
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#25d366" }} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Basic%20MLM%20Plan" target="-blank" role="button">
-                                                        <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
-                                                        <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Basic%20MLM%20Plan" target="-blank" role="button">
+                                                        <i className="fab fa-whatsapp"></i> Whatsapp Us</Link>
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
+                                                        <i className="fas fa-phone-volume"></i>&nbsp; Call Us</Link>
                                                 </div>
                                             </td>
                                             <td className="text-center">
                                                 <div className="d-flex">
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#25d366" }} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Standard%20MLM%20Plan" target="-blank" role="button">
-                                                        <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
-                                                        <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Standard%20MLM%20Plan" target="-blank" role="button">
+                                                        <i className="fab fa-whatsapp"></i> Whatsapp Us</Link>
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
+                                                        <i className="fas fa-phone-volume"></i>&nbsp; Call Us</Link>
                                                 </div>
                                             </td>
                                             <td className="text-center">
                                                 <div className="d-flex">
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#25d366" }} href="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Premium%20MLM%20Plan" target="-blank" role="button">
-                                                        <i className="fab fa-whatsapp"></i> Whatsapp Us</a>
-                                                    <a className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} href={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
-                                                        <i className="fas fa-phone-volume"></i>&nbsp; Call Us</a>
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Premium%20MLM%20Plan" target="-blank" role="button">
+                                                        <i className="fab fa-whatsapp"></i> Whatsapp Us</Link>
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
+                                                        <i className="fas fa-phone-volume"></i>&nbsp; Call Us</Link>
                                                 </div>
                                             </td>
                                         </tr>
@@ -692,7 +692,7 @@ export default function Home() {
                                                             <div data-countdown="2025/8/31"></div>
                                                         </div>
                                                         <div className="links">
-                                                            <a href="#pricing_section" className="mybtn3 mybtn-bg"><span>Check Pricing Packages</span> </a>
+                                                            <Link to="#pricing_section" className="mybtn3 mybtn-bg"><span>Check Pricing Packages</span> </Link>
                                                         </div>
                                                     </div>
                                                 </div>
