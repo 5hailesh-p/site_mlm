@@ -25,8 +25,8 @@ export const Header = () => {
                                             </a>
                                             <div className="dropdown-menu">
                                                 <a className="dropdown-item" href="/about"><i className="fas fa-chevron-right"></i> About Us</a>
-                                                <a className="dropdown-item" href="client.html"><i className="fas fa-chevron-right"></i>Clients</a>
-                                                <a className="dropdown-item" href="feature.html"><i className="fas fa-chevron-right"></i>Features</a>
+                                                <a className="dropdown-item" href="/clients"><i className="fas fa-chevron-right"></i>Clients</a>
+                                                <a className="dropdown-item" href="/feature"><i className="fas fa-chevron-right"></i>Features</a>
                                             </div>
                                         </li>
                                         <li className="nav-item">

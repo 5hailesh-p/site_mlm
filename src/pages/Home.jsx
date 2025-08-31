@@ -1,8 +1,6 @@
 
 import { useEffect } from "react"
-
-import img1 from "../assets/images/shape-pattern.png"
-import f2 from "../assets/img/dashbord/f2.png"
+ 
 import { Header } from "../compo/Header"
 import Footer from "../compo/Footer"
 
@@ -17,10 +15,9 @@ export default function Home() {
         <>
             <Header />
             <div>
-
-                {/* <!-- ================Hero Area Start======================== --> */}
+ 
                 <div id="home" className="hero-area">
-                    <img className="shape" src={img1} alt="background shape image" />
+                    <img className="shape" src="/images/shape-pattern.png" alt="background shape image" />
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 col-md-6 d-flex align-self-center">
@@ -56,15 +53,13 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                    <img className="img-fluid img" src={f2} alt="mlm softwere dashbord" />
+                                    <img className="img-fluid img" src="/img/dashbord/f2.png" alt="mlm softwere dashbord" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* <!-- =================Hero Area End #E32C42========================= --> */}
-
-                {/* <!--=========================== req. demo start ===================--> */}
+                </div> 
+ 
                 <section className="about" id="about">
                     <div className="container">
 
@@ -101,17 +96,15 @@ export default function Home() {
 
                         </div>
                     </div>
-                </section>
-                {/* <!--=========================== req. demo End ===================--> */}
-
-                {/* <!-- ===========================whaybest Start ====================--> */}
+                </section> 
+ 
                 <section className="whaybest">
                     <div className="container">
                         <div className="row row-one">
 
                             <div className="col-lg-5 d-flex">
                                 <div className="about-img">
-                                    <img src="img/dashbord/1.png" alt="" style={{ maxWidth: "20rem" }} />
+                                    <img src="/img/dashbord/1.png" alt="" style={{ maxWidth: "20rem" }} />
                                 </div>
                             </div>
 
@@ -254,15 +247,13 @@ export default function Home() {
 
                             <div className="col-lg-5 d-flex order-first order-lg-last">
                                 <div className="about-img">
-                                    <img src="img/dashbord/3.png" alt="" />
+                                    <img src="/img/dashbord/3.png" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                {/* <!--=======================We are best Area end===================== --> */}
-
-                {/* <!-- ===========================feature Start ====================--> */}
+                </section> 
+ 
                 <section className="feature" id="feature">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -354,7 +345,7 @@ export default function Home() {
                             </div>
                             <div className="col-lg-4 d-flex justify-content-center">
                                 <div className="center-feature align-self-center">
-                                    <img src="img/dashbord/2a.png" alt="" />
+                                    <img src="/img/dashbord/2a.png" alt="" />
                                 </div>
                             </div>
                             <div className="col-lg-4">
@@ -428,9 +419,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
-                {/* <!-- Service Area End --> */}
-                {/* <!--  ====================Technology we used starts===================--> */}
+                </section> 
+
                 <section className="video" id="video">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -446,7 +436,7 @@ export default function Home() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="video-wrapper">
-                                    <img src="img/svg/tech6_white.svg" alt="" />
+                                    <img src="/img/svg/tech6_white.svg" alt="" />
 
                                 </div>
                             </div>
@@ -495,7 +485,7 @@ export default function Home() {
                                         <div className="fun-box">
                                             <div className="inner-content inner-content4 d-flex">
                                                 <div className="icon">
-                                                    <img src="img/svg/tech1.svg" alt="codechroma Technology image" />
+                                                    <img src="/img/svg/tech1.svg" alt="codechroma Technology image" />
                                                 </div>
                                                 <div className="tech_name">
                                                     <h5 className="categori">Redis</h5>
@@ -507,7 +497,7 @@ export default function Home() {
                                         <div className="fun-box">
                                             <div className="inner-content inner-content3 d-flex">
                                                 <div className="icon">
-                                                    <img src="img/svg/tech3.svg" alt="codechroma Technology image" />
+                                                    <img src="/img/svg/tech3.svg" alt="codechroma Technology image" />
                                                 </div>
                                                 <div className="tech_name">
                                                     <h5 className="categori">PostgreSQL</h5>
@@ -519,7 +509,7 @@ export default function Home() {
                                         <div className="fun-box">
                                             <div className="inner-content inner-content1 d-flex">
                                                 <div className="icon">
-                                                    <img src="img/svg/tech2a.svg" alt="codechroma Technology image" />
+                                                    <img src="/img/svg/tech2a.svg" alt="codechroma Technology image" />
                                                 </div>
                                                 <div className="tech_name">
                                                     <h5 className="categori">MySQL</h5>
@@ -532,12 +522,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
-                {/* <!-- =====================Technology We Used End ===============--> */}
+                </section> 
 
 
-
-                {/* <!-- =================Pricing Start ====================--> */}
+ 
                 <section className="compare-section" id="pricing_section">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -555,21 +543,21 @@ export default function Home() {
 
                                             <th className="text-center">
                                                 <div className="product-image">
-                                                    <img src="img/svg/1.svg" alt="" />
+                                                    <img src="/img/svg/1.svg" alt="" />
                                                 </div>
                                                 <h2 className="product-title">Basic </h2>
                                                 <p className="product-subtitle">Now 10% Off</p>
                                             </th>
                                             <th className="text-center">
                                                 <div className="product-image">
-                                                    <img src="img/svg/3.svg" alt="" />
+                                                    <img src="/img/svg/3.svg" alt="" />
                                                 </div>
                                                 <h2 className="product-title">Standard </h2>
                                                 <p className="product-subtitle">Now 10% Off</p>
                                             </th>
                                             <th className="text-center">
                                                 <div className="product-image">
-                                                    <img src="img/svg/7.svg" alt="" />
+                                                    <img src="/img/svg/7.svg" alt="" />
                                                 </div>
                                                 <h2 className="product-title">Premium </h2>
                                                 <p className="product-subtitle">Now 10% Off</p>
@@ -673,10 +661,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
-                {/* <!-- =======================pricing Area End =====================--> */}
-
-                {/* <!--=======================Android App Start===================== --> */}
+                </section> 
+ 
                 <section className="dealofweek">
                     <img className="shape" src="assets/images/shape-pattern.png" alt="" />
                     <div className="container">
@@ -689,7 +675,7 @@ export default function Home() {
                                             <div className="row">
                                                 <div className="col-md-4 col-lg-6 no_padding">
                                                     <div className="left-area">
-                                                        <img src="img/android.png" alt="Codechroma android App" />
+                                                        <img src="/img/android.png" alt="Codechroma android App" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-8 col-lg-6 d-flex">
@@ -718,8 +704,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
-                {/* <!-- =================Android App end ====================--> */}
+                </section> 
 
 
 
@@ -765,8 +750,7 @@ export default function Home() {
                 </div>
                 {/* <!-- Subscribe Area End --> */}
                 <br />
-
-                {/* <!-- ========================They Trusted Us start======================= --> */}
+ 
                 <section id="faq" className="faq design_client">
                     <div className="container">
                         <div className="section-title extra">
@@ -783,85 +767,42 @@ export default function Home() {
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/1.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/1.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/2.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/2.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/3.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/3.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/4.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/4.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/5.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/5.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/6.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="img/logo/7.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="img/logo/8.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="img/logo/9.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="img/logo/10.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="img/logo/11.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="img/logo/12.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/6.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
@@ -869,14 +810,42 @@ export default function Home() {
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/13.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/7.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/14.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/8.jpg" alt="Client Trust Us" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="single-product">
+                                            <div className="img">
+                                                <img src="/img/logo/9.jpg" alt="Client Trust Us" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="single-product">
+                                            <div className="img">
+                                                <img src="/img/logo/10.jpg" alt="Client Trust Us" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="single-product">
+                                            <div className="img">
+                                                <img src="/img/logo/11.jpg" alt="Client Trust Us" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="single-product">
+                                            <div className="img">
+                                                <img src="/img/logo/12.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
@@ -884,7 +853,22 @@ export default function Home() {
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/15.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/13.jpg" alt="Client Trust Us" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="item">
+                                        <div className="single-product">
+                                            <div className="img">
+                                                <img src="/img/logo/14.jpg" alt="Client Trust Us" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="single-product">
+                                            <div className="img">
+                                                <img src="/img/logo/15.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
@@ -899,56 +883,56 @@ export default function Home() {
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f1.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f1.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f2.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f2.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f3.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f3.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f4.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f4.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f5.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f5.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f6.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f6.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f7.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f7.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="item">
                                         <div className="single-product">
                                             <div className="img">
-                                                <img src="img/logo/f8.jpg" alt="Client Trust Us" />
+                                                <img src="/img/logo/f8.jpg" alt="Client Trust Us" />
                                             </div>
                                         </div>
                                     </div>
@@ -958,21 +942,19 @@ export default function Home() {
 
                             <div className="col-lg-4 d-flex">
                                 <div className="faq-img">
-                                    <img src="img/svg/client3.svg" alt="Our Happy Client" />
+                                    <img src="/img/svg/client3.svg" alt="Our Happy Client" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                {/* <!-- ========================They Trusted Us End======================= --> */}
+                </section> 
                 <section className="contact_bottom">
                     <br /><br />
                     <div className="container text-center contact_bottom1">
                         <h2 style={{ color: "#002440 " }} >Feel Free To Discuss about your Start Up <br /> +91 8822955023</h2>
                     </div>
                     <br /><br />
-                </section>
-                {/* <!-- ====================Footer Section Start ========================--> */}
+                </section> 
 
 
             </div>

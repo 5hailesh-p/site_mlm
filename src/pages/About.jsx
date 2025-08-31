@@ -29,7 +29,7 @@ const About = () => {
                 </ul>
             </div>
             <div className="col-lg-4 col-md-5 img-small-sm">
-              <img src="img/svg/about1.svg" alt="about us image"/>
+              <img src="/img/svg/about1.svg" alt="about us image"/>
             </div>
         </div>
     </div>
@@ -81,7 +81,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="col-lg-5 text-center about_border">
-                      <img src="img/plan/about.webp" alt="mlm business codechroma"/>
+                      <img src="/img/plan/about.webp" alt="mlm business codechroma"/>
                       <p style={{color: "#CA75CE"}}>Control 1lakh members with our software</p>
                     </div>
                   </div>
