@@ -13,7 +13,7 @@ const Breadcrumb = (props) => {
                             </h4>
                             <ul className="breadcrumb-list">
                                 <li>
-                                    <Link href="index-2.html">
+                                    <Link href="/">
                                         <i className="fas fa-home"></i>
                                         Home
                                     </Link>
@@ -27,7 +27,7 @@ const Breadcrumb = (props) => {
                             </ul>
                         </div>
                         <div className="col-lg-4 col-md-5 img-small-sm pt-5">
-                            <img src="/img/svg/undraw_Business_analytics_re_tfh3.svg" alt="codechroma plan image" />
+                            <img src="/img/svg/undraw_Business_analytics_re_tfh3.svg" alt=" plan image" />
                         </div>
                     </div>
                 </div>

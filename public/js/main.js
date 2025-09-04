@@ -6,15 +6,18 @@ $(function ($) {
         $body = $('body');
         // Click To Scroll 
 
-        $('.navigation .navbar-nav a').on('click', function (event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top -80
-            }, 1000);
-            event.preventDefault();
-        });
+        // $('.navigation .navbar-nav a').on('click', function (event) {
+        //     var $anchor = $(this);
+        //     $('html, body').stop().animate({
+        //         scrollTop: $($anchor.attr('href')).offset().top -80
+        //     }, 1000);
+        //     event.preventDefault();
+        // });
 
-
+// $('.dropdown').onclic(function () {
+//   $(this).addClass('show');
+//   $(this).find('.dropdown-menu').addClass('show');
+// });
         // Navbar collapse on click
         $('.nav-link').on('click', function () {
             $('.navbar-collapse').collapse('hide');
