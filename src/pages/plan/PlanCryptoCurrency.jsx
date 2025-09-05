@@ -9,7 +9,8 @@ const PlanCryptoCurrency = () => {
 
             <Header />
 
-            <Breadcrumb title={"Cryptocurrency Plan"} />
+            <Breadcrumb title={"  Cryptocurrency   Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/cryptocurrency'} />
+
 
             <section class="blog-page1 single-blog-area">
                 <div class="container">

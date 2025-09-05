@@ -9,8 +9,9 @@ const PlanGeneration = () => {
 
 
             <Header />
+ 
+              <Breadcrumb title={" Generation    Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/generation'} />
 
-            <Breadcrumb title={"Generation Plan"} />
 
             <section className="blog-page1 single-blog-area">
                 <div className="container">

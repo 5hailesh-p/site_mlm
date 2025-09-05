@@ -8,8 +8,9 @@ const PlanBoard = () => {
         <>
 
             <Header />
-
-            <Breadcrumb title={"Board Plan"} />
+ 
+            <Breadcrumb title={" Board  Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/board'} />
+      
             <section class="blog-page1 single-blog-area">
                 <div class="container">
                     <div class="row">

@@ -16,6 +16,8 @@ import PlanCrowdFunding from './pages/plan/PlanCrowdFunding';
 import PlanCryptoCurrency from './pages/plan/PlanCryptoCurrency';
 import PlanAdView from './pages/plan/PlanAdView';
 import PlanBoard from './pages/plan/PlanBoard';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
         <Route path='/clients' element={<Clients />} />
         <Route path='/feature' element={<Features />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/privacy' element={<Privacy />} />
+        <Route path='/terms' element={<Terms />} />
 
         <Route path='/plan/binary' element={<PlanBinary  />} />
         <Route path='/plan/matrix' element={<PlanMatrix />} />

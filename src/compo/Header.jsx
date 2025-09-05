@@ -30,7 +30,7 @@ export const Header = () => {
                                 <div className="collapse navbar-collapse" id="mainmenu">
                                     <ul className="navbar-nav ml-auto">
                                         <li className="nav-item active">
-                                            <Link className="nav-link" to="/">Home</Link>
+                                            <Link className="nav-link nv" to="/">Home</Link>
                                         </li>
                                         <li className="nav-item dropdown">
                                             <Link className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,12 +42,10 @@ export const Header = () => {
                                                 <Link className="dropdown-item" to="/feature"><i className="fas fa-chevron-right"></i>Features</Link>
                                             </div>
                                         </li>
-                                        {/* <li className="nav-item">
-                                            <Link className="nav-link" to="demo_site.html">Demo</Link>
-                                        </li> */}
+                                       
 
                                         <li className="nav-item">
-                                            <Link className="nav-link" to="/#pricing_section">Pricing</Link>
+                                            <Link className="nav-link nv" to="/#pricing_section">Pricing</Link>
                                         </li>
 
                                         <li className="nav-item dropdown">
@@ -68,11 +66,11 @@ export const Header = () => {
                                         </li>
 
                                         <li className="nav-item">
-                                            <Link className="nav-link" to="/contact">Contact Us</Link>
+                                            <Link className="nav-link nv" to="/contact">Contact Us</Link>
                                         </li>
 
                                         <li className="nav-item nav-border">
-                                            <Link className="nav-link" to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank"><span><i className="fas fa-phone-volume"></i>&nbsp;{ import.meta.env.VITE_SITE_CONTACT}</span></Link>
+                                            <Link className="nav-link nv" to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank"><span><i className="fas fa-phone-volume"></i>&nbsp;{ import.meta.env.VITE_SITE_CONTACT}</span></Link>
                                         </li>
                                     </ul>
                                 </div>

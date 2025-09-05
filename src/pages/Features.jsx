@@ -8,6 +8,8 @@ const Features = () => {
     <>
 
       <Header />
+        <Breadcrumb title={" MLM Software Features"} img={'/img/svg/f3.svg'} link={'/feature'} />
+
       <section className="breadcrumb-area">
         <div className="container">
           <div className="row">

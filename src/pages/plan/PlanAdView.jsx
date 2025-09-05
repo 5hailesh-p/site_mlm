@@ -7,8 +7,8 @@ const PlanAdView = () => {
     return (
         <>
             <Header />
-
-            <Breadcrumb title={"Ad View Plan"} />
+ 
+            <Breadcrumb title={"Ad View Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/adview'} />
             <section class="blog-page1 single-blog-area">
                 <div class="container">
                     <div class="row">

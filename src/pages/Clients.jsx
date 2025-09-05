@@ -2,39 +2,15 @@ import React from 'react'
 import { Header } from '../compo/Header'
 import Footer from '../compo/Footer'
 import { Link } from 'react-router-dom'
+import Breadcrumb from '../compo/Breadcrumb'
 
 const Clients = () => {
   return (
     <>
       <Header />
-      <section className="breadcrumb-area">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 col-md-7 txtcntr-small">
-              <h4 className="title">
-                Our Happy Clients
-              </h4>
-              <ul className="breadcrumb-list">
-                <li>
-                  <Link to="/">
-                    <i className="fas fa-home"></i>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <span><i className="fas fa-chevron-right"></i> </span>
-                </li>
-                <li>
-                  <Link to="/client">Our Happy Clients</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-4 col-md-5 img-small-sm">
-              <img src="/img/svg/f1.svg" alt="about us image" />
-            </div>
-          </div>
-        </div>
-      </section>
+        <Breadcrumb title={" Our Happy Clients"} img={'/img/svg/f1.svg'} link={'/client'} />
+
+       
       <section className="blog-page single-blog-area client">
         <div className="container">
           <Link className="text-center">

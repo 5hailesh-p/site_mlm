@@ -22,12 +22,12 @@ const Breadcrumb = (props) => {
                                     <span><i className="fas fa-chevron-right"></i> </span>
                                 </li>
                                 <li>
-                                    <Link to="#">{props.title}</Link>
+                                    <Link to={props.link}>{props.title}</Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-lg-4 col-md-5 img-small-sm pt-5">
-                            <img src="/img/svg/undraw_Business_analytics_re_tfh3.svg" alt=" plan image" />
+                            <img src={props.img} alt=" plan image" />
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,8 @@ const PlanMatrix = () => {
     return (
         <>
             <Header />
-            <Breadcrumb title={" Matrix Plan"} />
+            <Breadcrumb title={" Matrix  Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/matrix'} />
+
             <section className="blog-page1 single-blog-area">
                 <div className="container">
                     <div className="row">

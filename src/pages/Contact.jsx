@@ -7,29 +7,9 @@ const Contact = () => {
     return (
         <>
             <Header />
-            <section className="breadcrumb-area">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8 col-md-7 txtcntr-small">
-                            <h4 className="title">Contact Us</h4>
-                            <ul className="breadcrumb-list">
-                                <li>
-                                    <Link to="/"><i className="fas fa-home"></i> Home</Link>
-                                </li>
-                                <li>
-                                    <span><i className="fas fa-chevron-right"></i></span>
-                                </li>
-                                <li>
-                                    <Link to="/contact">Contact Us</Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-4 col-md-5 img-small-sm">
-                            <img src="/img/svg/f1.svg" alt="about us" />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Breadcrumb title={" Contact Us"} img={'/img/svg/f1.svg'} link={'/contact'} />
+
+            
 
             <section className="contact" id="contact">
                 <div className="container">
@@ -79,7 +59,7 @@ const Contact = () => {
                                     <div className="content">
                                         <p>info@codechroma.com</p>
                                         <p>codechromaindia@gmail.com</p>
-                                        <p>{ import.meta.env.VITE_SITE_CONTACT}</p>
+                                        <p>{import.meta.env.VITE_SITE_CONTACT}</p>
                                     </div>
                                 </div>
                             </div>

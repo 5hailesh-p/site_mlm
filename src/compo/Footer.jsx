@@ -71,23 +71,24 @@ const Footer = () => {
                         <div className="col-md-4 Footer_head info_color1">
                             <h3>MLM Plans<br /><span>we already served</span></h3>
 
-                            <p><Link to="plan/binary"><i className="fas fa-caret-right"></i>&emsp;Binary Plan</Link></p>
-                            <p><Link to="plan/generation"><i className="fas fa-caret-right"></i>&emsp;Generation Plan</Link></p>
-                            <p><Link to="plan/matrix"><i className="fas fa-caret-right"></i>&emsp;Matrix Plan</Link></p>
-                            <p><Link to="plan/single-leg"><i className="fas fa-caret-right"></i>&emsp;Single Leg Plan</Link></p>
-                            <p><Link to="plan/board"><i className="fas fa-caret-right"></i>&emsp;Board Plan</Link></p>
-                            <p><Link to="plan/autopool"><i className="fas fa-caret-right"></i>&emsp;Autopool Plan</Link></p>
-                            <p><Link to="plan/crowd-funding"><i className="fas fa-caret-right"></i>&emsp;Crowd Funding Plan</Link></p>
-                            <p><Link to="plan/cryptocurrency"><i className="fas fa-caret-right"></i>&emsp;Cryptocurrency Plan</Link></p>
-                            <p><Link to="plan/ad-view"><i className="fas fa-caret-right"></i>&emsp;Ad View MLM Plan</Link></p>
+                            <p><Link to="/plan/binary"><i className="fas fa-caret-right"></i>&emsp;Binary Plan</Link></p>
+                            <p><Link to="/plan/generation"><i className="fas fa-caret-right"></i>&emsp;Generation Plan</Link></p>
+                            <p><Link to="/plan/matrix"><i className="fas fa-caret-right"></i>&emsp;Matrix Plan</Link></p>
+                            <p><Link to="/plan/singleleg"><i className="fas fa-caret-right"></i>&emsp;Single Leg Plan</Link></p>
+                            <p><Link to="/plan/board"><i className="fas fa-caret-right"></i>&emsp;Board Plan</Link></p>
+                            <p><Link to="/plan/autopool"><i className="fas fa-caret-right"></i>&emsp;Autopool Plan</Link></p>
+                            <p><Link to="/plan/crowdfunding"><i className="fas fa-caret-right"></i>&emsp;Crowd Funding Plan</Link></p>
+                            <p><Link to="/plan/cryptocurrency"><i className="fas fa-caret-right"></i>&emsp;Cryptocurrency Plan</Link></p>
+                            <p><Link to="/plan/adview"><i className="fas fa-caret-right"></i>&emsp;Ad View MLM Plan</Link></p>
+
                         </div>
                         <div className="col-md-4 Footer_head_find Footer_head info_color1">
                             <h3>Know More<br /><span>About Us</span></h3>
                             <p><Link to="/about"><i className="fas fa-chevron-circle-right"></i>&emsp;Know Who we Are!</Link></p>
                             <p><i className="fas fa-chevron-circle-right"></i>&emsp;Blogs</p>
                             <p><Link to="/contact"><i className="fas fa-chevron-circle-right"></i>&emsp;Contact Us</Link></p>
-                            <p><Link to="/privacy" target="_blank"><i className="fas fa-chevron-circle-right"></i>&emsp;Privacy Policy</Link></p>
-                            <p><Link to="/terms" target="_blank"><i className="fas fa-chevron-circle-right"></i>&emsp;Terms and Conditions</Link></p>
+                            <p><Link to="/privacy"  ><i className="fas fa-chevron-circle-right"></i>&emsp;Privacy Policy</Link></p>
+                            <p><Link to="/terms"  ><i className="fas fa-chevron-circle-right"></i>&emsp;Terms and Conditions</Link></p>
 
                             <div className="fotter-social-links">
                                 <h3>They Recognize Us</h3>

@@ -7,8 +7,8 @@ const PlanBinary = () => {
   return (
     <>
       <Header />
-
-      <Breadcrumb title={"Binary Plan"}/>
+ 
+      <Breadcrumb title={" Binary Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/binary'} />
       <section className="blog-page1 single-blog-area">
         <div className="container">
           <div className="row">

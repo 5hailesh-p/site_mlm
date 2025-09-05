@@ -8,7 +8,9 @@ const PlanSingleLeg = () => {
         <>
 
             <Header />
-            <Breadcrumb title={"Single Leg MLM Plan"} />
+            <Breadcrumb title={" Plan"} />
+                       <Breadcrumb title={" Single Leg MLM  Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/singleleg'} />
+
             <section className="blog-page1 single-blog-area">
                 <div className="container">
                     <div className="row">

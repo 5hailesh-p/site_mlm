@@ -34,7 +34,7 @@ export default function Home() {
                                             We deliver Best MLM software within 48 hours with dedicated server & android app.
                                         </p>
                                         <div className="links">
-                                            <Link to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank" className="mybtn3 mybtn-light"><span style={{ fontWeight: "550" }}><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </Link>
+                                            <Link to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank" className="mybtn3 mybtn-light"><span  ><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </Link>
                                             <Link to={import.meta.env.VITE_WHATSAPP_URL || "#"} target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </Link>
                                             <Link to="#" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </Link>
                                         </div>
@@ -663,7 +663,7 @@ export default function Home() {
                 </section> 
  
                 <section className="dealofweek">
-                    <img className="shape" src="assets/images/shape-pattern.png" alt="" />
+                    <img className="shape" src="/images/shape-pattern.png" alt="" />
                     <div className="container">
 
                         <div className="row justify-content-center">
@@ -750,203 +750,7 @@ export default function Home() {
                 {/* <!-- Subscribe Area End --> */}
                 <br />
  
-                <section id="faq" className="faq design_client">
-                    <div className="container">
-                        <div className="section-title extra">
-                            <h2 className="title">They Trusted Us</h2>
-                            {/* <!--  <p>
-          We deals with all type of mlm software with the best service assurance
-        </p> --> */}
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-7">
-                                <h3 className="client_font">Our Clients From India -</h3>
-                                {/* <!--  row 1 start--> */}
-                                <div className="product-slider">
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/1.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/2.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/3.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/4.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/5.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/6.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/7.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/8.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/9.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/10.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/11.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/12.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/13.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/14.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/15.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <br />
-                                <h3 className="client_font">Our Clients From Outside India -</h3>
-
-                                <div className="product-slider">
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f1.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f2.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f3.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f4.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f5.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f6.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f7.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="single-product">
-                                            <div className="img">
-                                                <img src="/img/logo/f8.jpg" alt="Client Trust Us" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div className="col-lg-4 d-flex">
-                                <div className="faq-img">
-                                    <img src="/img/svg/client3.svg" alt="Our Happy Client" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> 
+             
                 <section className="contact_bottom">
                     <br /><br />
                     <div className="container text-center contact_bottom1">

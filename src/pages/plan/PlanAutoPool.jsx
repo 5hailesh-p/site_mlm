@@ -7,8 +7,8 @@ const PlanAutoPool = () => {
     return (
         <>
             <Header />
-
-            <Breadcrumb title={"Autopool Plan"} />
+ 
+            <Breadcrumb title={"Autopool Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/autopool'} />
 
             <section className="blog-page1 single-blog-area">
                 <div className="container">

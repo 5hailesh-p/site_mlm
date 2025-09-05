@@ -7,8 +7,9 @@ const PlanCrowdFunding = () => {
     return (
         <>
             <Header />
-
-            <Breadcrumb title={"Crowd Funding Plan"} />
+ 
+            <Breadcrumb title={"  Crowd Funding  Plan"} img={'/img/svg/undraw_Business_analytics_re_tfh3.svg'} link={'/plan/crowdfunding'} />
+      
             <section class="blog-page1 single-blog-area">
                 <div class="container">
                     <div class="row">
