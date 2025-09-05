@@ -2,6 +2,7 @@
 import { Header } from '../compo/Header'
 import Footer from '../compo/Footer'
 import { Link } from 'react-router-dom'
+import Breadcrumb from '../compo/Breadcrumb'
 
 const Features = () => {
   return (
