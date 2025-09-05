@@ -26,8 +26,8 @@ const Footer = () => {
                                 </div>
                                 <p className="footer_line"><i className="fas fa-phone fa-flip-horizontal"></i>&emsp;{import.meta.env.VITE_SITE_CONTACT}</p>
                                 <p className="footer_line"><i className="fab fa-whatsapp"></i>&emsp;{import.meta.env.VITE_SITE_CONTACT}</p>
-                                <p className="footer_line"><i className="fas fa-envelope-open-text"></i>&emsp;Info@codechroma.com</p>
-                                <p className="footer_line"><i className="fas fa-envelope-open-text"></i>&emsp;codechromamlm@gmail.com</p>
+                                {/* <p className="footer_line"><i className="fas fa-envelope-open-text"></i>&emsp;Info@codechroma.com</p> */}
+                                <p className="footer_line"><i className="fas fa-envelope-open-text"></i>&emsp;{import.meta.env.VITE_SITE_EMAIL} </p>
 
                                 <div className="fotter-social-links">
                                     <h3>Connect With Us</h3>
