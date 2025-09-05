@@ -7,7 +7,8 @@ const Privacy = () => {
     return (
         <>
             <Header />
-            <Breadcrumb title={"Privacy Policy"} />
+            <Breadcrumb title={" Privacy Policy"} img={'/img/svg/terms1.svg'} link={'/privacy'} />
+
             <section className="blog-page1 single-blog-area">
                 <div className="container">
                     <div className="row">

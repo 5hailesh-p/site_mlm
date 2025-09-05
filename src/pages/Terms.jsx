@@ -7,7 +7,8 @@ const Terms = () => {
     return (
         <>
             <Header />
-            <Breadcrumb title={"Tearms & conditions"} />
+            <Breadcrumb title={" Tearms & conditions"} img={'/img/svg/terms1.svg'} link={'/terms'} />
+
             <section className="blog-page1 single-blog-area">
                 <div className="container">
                     <div className="row">
