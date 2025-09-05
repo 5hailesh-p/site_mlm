@@ -9,36 +9,9 @@ const Features = () => {
     <>
 
       <Header />
-        <Breadcrumb title={" MLM Software Features"} img={'/img/svg/f3.svg'} link={'/feature'} />
+      <Breadcrumb title={" MLM Software Features"} img={'/img/svg/f3.svg'} link={'/feature'} />
 
-      <section className="breadcrumb-area">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 col-md-7 txtcntr-small">
-              <h4 className="title">
-                MLM Software Features
-              </h4>
-              <ul className="breadcrumb-list">
-                <li>
-                  <Link to="/">
-                    <i className="fas fa-home"></i>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <span><i className="fas fa-chevron-right"></i> </span>
-                </li>
-                <li>
-                  <Link to="features.html">MLM Software Features</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-4 col-md-5 img-small-sm">
-              <img src="/img/svg/f3.svg" alt="about us image" />
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <section className="blog-page single-blog-area">
         <div className="container">
