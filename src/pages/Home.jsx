@@ -754,7 +754,7 @@ export default function Home() {
                 <section className="contact_bottom">
                     <br /><br />
                     <div className="container text-center contact_bottom1">
-                        <h2 style={{ color: "#002440 " }} >Feel Free To Discuss about your Start Up <br /> +91 8822955023</h2>
+                        <h2 style={{ color: "#002440 " }} >Feel Free To Discuss about your Start Up <br /> {import.meta.env.VITE_SITE_CONTACT}</h2>
                     </div>
                     <br /><br />
                 </section> 
