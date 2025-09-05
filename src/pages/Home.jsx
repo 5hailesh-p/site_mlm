@@ -67,7 +67,7 @@ export default function Home() {
                                 <div className="box1">
                                     <div className="inner-box subscribe-section">
                                         <div style={{ textAlign: "center" }}>
-                                            <h3 style={{ lineHeight: "2.3rem" }}>Helpline for MLM Software Demo and support <span style={{ color: '#D31027' }}>+918822955023</span><br /> or fill the form</h3>
+                                            <h3 style={{ lineHeight: "2.3rem" }}>Helpline for MLM Software Demo and support <span style={{ color: '#D31027' }}>{import.meta.env.VITE_SITE_CONTACT}</span><br /> or fill the form</h3>
 
                                         </div>
                                         <div className="newsletter-form-area">
