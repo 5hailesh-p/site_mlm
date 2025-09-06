@@ -628,7 +628,7 @@ export default function Home() {
                                         <tr>
                                             <td className="text-center">
                                                 <div className="d-flex">
-                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Basic%20MLM%20Plan" target="-blank" role="button">
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to={import.meta.env.VITE_WHATSAPP_URL || "#"} target="-blank" role="button">
                                                         <i className="fab fa-whatsapp"></i> Whatsapp Us</Link>
                                                     <Link className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
                                                         <i className="fas fa-phone-volume"></i>&nbsp; Call Us</Link>
@@ -636,7 +636,7 @@ export default function Home() {
                                             </td>
                                             <td className="text-center">
                                                 <div className="d-flex">
-                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Standard%20MLM%20Plan" target="-blank" role="button">
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to={import.meta.env.VITE_WHATSAPP_URL || "#"} target="-blank" role="button">
                                                         <i className="fab fa-whatsapp"></i> Whatsapp Us</Link>
                                                     <Link className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
                                                         <i className="fas fa-phone-volume"></i>&nbsp; Call Us</Link>
@@ -644,7 +644,7 @@ export default function Home() {
                                             </td>
                                             <td className="text-center">
                                                 <div className="d-flex">
-                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to="https://wa.me/918822955023?text=Hi%2C%20I%20would%20like%20to%20know%20about%20the%20Premium%20MLM%20Plan" target="-blank" role="button">
+                                                    <Link className="btn btn-primary" style={{ backgroundColor: "#25d366" }} to={import.meta.env.VITE_WHATSAPP_URL || "#"} target="-blank" role="button">
                                                         <i className="fab fa-whatsapp"></i> Whatsapp Us</Link>
                                                     <Link className="btn btn-primary" style={{ backgroundColor: "#339AF0" }} to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="-blank" role="button">
                                                         <i className="fas fa-phone-volume"></i>&nbsp; Call Us</Link>
