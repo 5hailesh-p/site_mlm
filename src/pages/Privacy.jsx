@@ -72,7 +72,7 @@ const Privacy = () => {
                                         <div className="row">
                                             <div className="col-lg-12 col-md-12 col-sm-12">
                                                 <p>
-                                                    Code Chroma Software Solutions doesn’t allow any illegal use of our trademark rights andif found legal actions can be taken. It comprises our brand logo, slogan, etc.
+                                                    {import.meta.env.VITE_SITE_NAME}   doesn’t allow any illegal use of our trademark rights andif found legal actions can be taken. It comprises our brand logo, slogan, etc.
                                                 </p>
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ const Privacy = () => {
                                         <div className="row">
                                             <div className="col-lg-12 col-md-12 col-sm-12">
                                                 <p>
-                                                    Code Chroma Software Solutions does not encourage email spams orpromotions without user consent.We hate spams as much as you do.
+                                                    {import.meta.env.VITE_SITE_NAME}    does not encourage email spams orpromotions without user consent.We hate spams as much as you do.
                                                 </p>
                                             </div>
                                         </div>

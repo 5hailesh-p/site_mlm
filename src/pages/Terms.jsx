@@ -43,7 +43,7 @@ const Terms = () => {
                                         <div className="row">
                                             <div className="col-lg-12 col-md-12 col-sm-12">
                                                 <p>
-                                                    The ownership rights of the source code will be only with the company itself. The ownership of the technology developed & delivered remains withCode Chroma Software Solutions.
+                                                    The ownership rights of the source code will be only with the company itself. The ownership of the technology developed & delivered remains with  {import.meta.env.VITE_SITE_NAME  }  .
                                                 </p>
                                             </div>
                                         </div>
@@ -276,7 +276,7 @@ const Terms = () => {
                                         <div className="row">
                                             <div className="col-lg-12 col-md-12 col-sm-12">
                                                 <p>
-                                                    During regular intervals, Code Chroma Software Solutions may update its Agreement and/or Policies for the Customer and all Customers shall be bound by the latest applicable updated Agreement and/ or Policy.
+                                                    During regular intervals, {import.meta.env.VITE_SITE_NAME }  may update its Agreement and/or Policies for the Customer and all Customers shall be bound by the latest applicable updated Agreement and/ or Policy.
                                                 </p>
                                             </div>
                                         </div>
