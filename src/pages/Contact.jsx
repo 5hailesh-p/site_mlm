@@ -57,9 +57,8 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="right">
-                                    <div className="content">
-                                        <p>info@codechroma.com</p>
-                                        <p>codechromaindia@gmail.com</p>
+                                    <div className="content"> 
+                                        <p>{import.meta.env.VITE_SITE_EMAIL}</p>
                                         <p>{import.meta.env.VITE_SITE_CONTACT}</p>
                                     </div>
                                 </div>

@@ -17,13 +17,10 @@ const Footer = () => {
                                     </Link>
                                 </div>
                                 <div className="text">
-                                    <span><i className="fas fa-map-marker-alt" style={{ color: "rgba(234, 223, 18, 0.7)" }}> Find Us : </i>&emsp;Raheja Mindspace, Hi-tech City, Madhapur, Near DELL, Hyderabad - 500081</span>
+                                    <span><i className="fas fa-map-marker-alt" style={{ color: "rgba(234, 223, 18, 0.7)" }}> Find Us : </i>&emsp;{import.meta.env.VITE_SITE_ADDRESS}</span>
 
                                 </div>
-                                <div className="text">
-                                    <span><i className="fas fa-map-marker-alt" style={{ color: "rgba(234, 223, 18, 0.7)" }}> Find Us : </i>&emsp;House No 12, Ajanta Path, Basisthpur, Guwahati, Assam -781028</span>
-
-                                </div>
+                         
                                 <p className="footer_line"><i className="fas fa-phone fa-flip-horizontal"></i>&emsp;{import.meta.env.VITE_SITE_CONTACT}</p>
                                 <p className="footer_line"><i className="fab fa-whatsapp"></i>&emsp;{import.meta.env.VITE_SITE_CONTACT}</p>
                                 {/* <p className="footer_line"><i className="fas fa-envelope-open-text"></i>&emsp;Info@codechroma.com</p> */}
