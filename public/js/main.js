@@ -19,9 +19,9 @@ $(function ($) {
         $(this).find('.dropdown-menu').toggleClass('show');
     });
     // Navbar collapse on click
-    $('.nv').on('click', function () {
-        $('.navbar-collapse').collapse('hide');
-    });
+    // $('.nv').on('click', function () {
+    //     $('.navbar-collapse').collapse('hide');
+    // });
 
     // Product deal countdown
     $('[data-countdown]').each(function () {
