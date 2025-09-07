@@ -60,9 +60,9 @@ export const Header = () => {
                                         </div>
                                     </li>
 
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <Link className="nav-link nv" to="/#pricing_section">Pricing</Link>
-                                    </li>
+                                    </li> */}
 
                                     {/* MLM Dropdown */}
                                     <li className={`nav-item dropdown ${isMlmOpen ? 'show' : ''}`}>
