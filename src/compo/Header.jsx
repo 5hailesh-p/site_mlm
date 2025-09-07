@@ -1,84 +1,109 @@
-import { Link } from "react-router-dom"
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-
 
 export const Header = () => {
+    const [isCompanyOpen, setCompanyOpen] = useState(false);
+    const [isMlmOpen, setMlmOpen] = useState(false);
+
+    const toggleCompany = () => setCompanyOpen(!isCompanyOpen);
+    const toggleMlm = () => setMlmOpen(!isMlmOpen);
+
+    const closeDropdowns = () => {
+        setCompanyOpen(false);
+        setMlmOpen(false);
+    };
+
     return (
-        <>
-            <header className="navigation">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 p-0">
-                            <nav className="navbar navbar-expand-lg navbar-light">
-                                <Link  className="navbar-brand" to="/">
-                                    <img src="https://tracequill.com/assets/img/logoclr.png" alt={import.meta.env.VITE_SITE_NAME} />
-                                    {/* <img src="img/our_logo/logo.png" alt={import.meta.env.VITE_SITE_NAME} /> */}
-                                </Link>
-                                <button
-                                    className="navbar-toggler"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#mainmenu"
-                                    aria-controls="mainmenu"
-                                    aria-expanded="false"
-                                    aria-label="Toggle navigation"
-                                >
-                                    <span className="navbar-toggler-icon"></span>
-                                </button>
-                                <div className="collapse navbar-collapse" id="mainmenu">
-                                    <ul className="navbar-nav ml-auto">
-                                        <li className="nav-item active">
-                                            <Link className="nav-link nv" to="/">Home</Link>
-                                        </li>
-                                        <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Company
-                                            </Link>
-                                            <div className="dropdown-menu">
-                                                <Link className="dropdown-item" to="/about"><i className="fas fa-chevron-right"></i> About Us</Link>
-                                                <Link className="dropdown-item" to="/clients"><i className="fas fa-chevron-right"></i>Clients</Link>
-                                                <Link className="dropdown-item" to="/feature"><i className="fas fa-chevron-right"></i>Features</Link>
-                                            </div>
-                                        </li>
-                                       
+        <header className="navigation">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 p-0">
+                        <nav className="navbar navbar-expand-lg navbar-light">
+                            <Link className="navbar-brand" to="/">
+                                <img src="https://tracequill.com/assets/img/logoclr.png" alt={import.meta.env.VITE_SITE_NAME} />
+                            </Link>
+                            <button
+                                className="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#mainmenu"
+                                aria-controls="mainmenu"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="collapse navbar-collapse" id="mainmenu">
+                                <ul className="navbar-nav ml-auto" onMouseLeave={closeDropdowns}>
+                                    <li className="nav-item active">
+                                        <Link className="nav-link nv" to="/">Home</Link>
+                                    </li>
 
-                                        <li className="nav-item">
-                                            <Link className="nav-link nv" to="/#pricing_section">Pricing</Link>
-                                        </li>
+                                    {/* Company Dropdown */}
+                                    <li className={`nav-item dropdown ${isCompanyOpen ? 'show' : ''}`}>
+                                        <span
+                                            className="nav-link dropdown-toggle"
+                                            role="button"
+                                            onClick={toggleCompany}
+                                            aria-haspopup="true"
+                                            aria-expanded={isCompanyOpen}
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            Company
+                                        </span>
+                                        <div className={`dropdown-menu ${isCompanyOpen ? 'show' : ''}`}>
+                                            <Link className="dropdown-item" to="/about"><i className="fas fa-chevron-right"></i> About Us</Link>
+                                            <Link className="dropdown-item" to="/clients"><i className="fas fa-chevron-right"></i> Clients</Link>
+                                            <Link className="dropdown-item" to="/feature"><i className="fas fa-chevron-right"></i> Features</Link>
+                                        </div>
+                                    </li>
 
-                                        <li className="nav-item dropdown">
-                                            <Link className="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                MLM Plans
-                                            </Link>
-                                            <div className="dropdown-menu">
-                                                <Link className="dropdown-item" to="/plan/binary"><i className="fas fa-chevron-right"></i> Binary Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/generation"><i className="fas fa-chevron-right"></i>Generation Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/matrix"><i className="fas fa-chevron-right"></i>Matrix Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/singleleg"><i className="fas fa-chevron-right"></i>Single Leg Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/board"><i className="fas fa-chevron-right"></i>Board Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/autopool"><i className="fas fa-chevron-right"></i>Autopool Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/crowdfunding"><i className="fas fa-chevron-right"></i>Crowd Funding Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/cryptocurrency"><i className="fas fa-chevron-right"></i>Cryptocurrency Plan</Link>
-                                                <Link className="dropdown-item" to="/plan/adview"><i className="fas fa-chevron-right"></i>Ad View MLM Plan</Link>
-                                            </div>
-                                        </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link nv" to="/#pricing_section">Pricing</Link>
+                                    </li>
 
-                                        <li className="nav-item">
-                                            <Link className="nav-link nv" to="/contact">Contact Us</Link>
-                                        </li>
+                                    {/* MLM Dropdown */}
+                                    <li className={`nav-item dropdown ${isMlmOpen ? 'show' : ''}`}>
+                                        <span
+                                            className="nav-link dropdown-toggle"
+                                            role="button"
+                                            onClick={toggleMlm}
+                                            aria-haspopup="true"
+                                            aria-expanded={isMlmOpen}
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            MLM Plans
+                                        </span>
+                                        <div className={`dropdown-menu ${isMlmOpen ? 'show' : ''}`}>
+                                            <Link className="dropdown-item" to="/plan/binary"><i className="fas fa-chevron-right"></i> Binary Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/generation"><i className="fas fa-chevron-right"></i> Generation Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/matrix"><i className="fas fa-chevron-right"></i> Matrix Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/singleleg"><i className="fas fa-chevron-right"></i> Single Leg Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/board"><i className="fas fa-chevron-right"></i> Board Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/autopool"><i className="fas fa-chevron-right"></i> Autopool Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/crowdfunding"><i className="fas fa-chevron-right"></i> Crowd Funding Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/cryptocurrency"><i className="fas fa-chevron-right"></i> Cryptocurrency Plan</Link>
+                                            <Link className="dropdown-item" to="/plan/adview"><i className="fas fa-chevron-right"></i> Ad View MLM Plan</Link>
+                                        </div>
+                                    </li>
 
-                                        <li className="nav-item nav-border">
-                                            <Link className="nav-link nv" to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank"><span><i className="fas fa-phone-volume"></i>&nbsp;{ import.meta.env.VITE_SITE_CONTACT}</span></Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
+                                    <li className="nav-item">
+                                        <Link className="nav-link nv" to="/contact">Contact Us</Link>
+                                    </li>
+
+                                    <li className="nav-item nav-border">
+                                        <Link className="nav-link nv" to={`tel:${import.meta.env.VITE_SITE_CONTACT}`} target="_blank">
+                                            <span><i className="fas fa-phone-volume"></i>&nbsp;{import.meta.env.VITE_SITE_CONTACT}</span>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </header>
-        </>
-    )
-}
+            </div>
+        </header>
+    );
+};
