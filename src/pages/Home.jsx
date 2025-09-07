@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
- 
+
 import { Header } from "../compo/Header"
 import Footer from "../compo/Footer"
 
 export default function Home() {
- 
+
     useEffect(() => {
 
     }, [])
@@ -14,7 +14,7 @@ export default function Home() {
         <>
             <Header />
             <div>
- 
+
                 <div id="home" className="hero-area">
                     <img className="shape" src="/images/shape-pattern.png" alt="background shape image" />
                     <div className="container">
@@ -57,8 +57,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div> 
- 
+                </div>
+
                 <section className="about" id="about">
                     <div className="container">
 
@@ -95,8 +95,8 @@ export default function Home() {
 
                         </div>
                     </div>
-                </section> 
- 
+                </section>
+
                 <section className="whaybest">
                     <div className="container">
                         <div className="row row-one">
@@ -113,7 +113,7 @@ export default function Home() {
                                     <ul className="feature-list">
 
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-binary.html">
+                                            <Link to="/plan/binary">
                                                 <span>1</span>
                                                 <div className="content">
                                                     <h4>Binary Plan</h4>
@@ -122,7 +122,7 @@ export default function Home() {
                                         </li>
 
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-generation.html">
+                                            <Link to="/plan/generation">
                                                 <span>2</span>
                                                 <div className="content">
                                                     <h4>Generation Plan</h4>
@@ -131,7 +131,7 @@ export default function Home() {
                                         </li>
 
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-matrix.html">
+                                            <Link to="/plan/matrix">
                                                 <span>3</span>
                                                 <div className="content">
                                                     <h4>Matrix Plan</h4>
@@ -140,47 +140,52 @@ export default function Home() {
                                         </li>
 
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-single-leg.html">
+                                            <Link to="/plan/singleleg">
                                                 <span>5</span>
                                                 <div className="content">
                                                     <h4>Single Leg Plan</h4>
                                                 </div>
                                             </Link>
                                         </li>
+
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-board.html">
+                                            <Link to="/plan/board">
                                                 <span>6</span>
                                                 <div className="content">
                                                     <h4>Board Plan</h4>
                                                 </div>
                                             </Link>
                                         </li>
+
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-autopool.html">
+                                            <Link to="/plan/autopool">
                                                 <span>7</span>
                                                 <div className="content">
                                                     <h4>Autopool Plan</h4>
                                                 </div>
                                             </Link>
                                         </li>
+
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-crowd-funding.html">
+                                            <Link to="/plan/crowdfunding">
                                                 <span>8</span>
                                                 <div className="content">
                                                     <h4>Crowd Funding Plan</h4>
                                                 </div>
                                             </Link>
                                         </li>
+
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-cryptocurrency.html">
+                                            <Link to="/plan/cryptocurrency">
                                                 <span>4</span>
                                                 <div className="content">
                                                     <h4>Cryptocurrency Plan</h4>
                                                 </div>
                                             </Link>
                                         </li>
+
                                         <li className="text-center plan_boder">
-                                            <Link to="plan-ad-view.html">
+                                            <Link to="/plan/adview">
                                                 <span>9</span>
                                                 <div className="content">
                                                     <h4>Ad View MLM Plan</h4>
@@ -190,6 +195,7 @@ export default function Home() {
                                     </ul>
                                 </div>
                             </div>
+
 
                         </div>
                         {/* <!-- responsive wbst start --> */}
@@ -251,8 +257,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section> 
- 
+                </section>
+
                 <section className="feature" id="feature">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -418,7 +424,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section> 
+                </section>
 
                 <section className="video" id="video">
                     <div className="container">
@@ -521,10 +527,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section> 
+                </section>
 
 
- 
+
                 <section className="compare-section" id="pricing_section">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -660,8 +666,8 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section> 
- 
+                </section>
+
                 <section className="dealofweek">
                     <img className="shape" src="/images/shape-pattern.png" alt="" />
                     <div className="container">
@@ -703,7 +709,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section> 
+                </section>
 
 
 
@@ -749,19 +755,19 @@ export default function Home() {
                 </div>
                 {/* <!-- Subscribe Area End --> */}
                 <br />
- 
-             
+
+
                 <section className="contact_bottom">
                     <br /><br />
                     <div className="container text-center contact_bottom1">
                         <h2 style={{ color: "#002440 " }} >Feel Free To Discuss about your Start Up <br /> {import.meta.env.VITE_SITE_CONTACT}</h2>
                     </div>
                     <br /><br />
-                </section> 
+                </section>
 
 
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
