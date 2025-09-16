@@ -16,7 +16,7 @@ const About = () => {
                 <div className="content">
                   <a>
                     <h4 className="title">
-                      About <span style={{ color: "#970810" }}>Codechroma Software solutions</span>
+                      About <span style={{ color: "#970810" }}>{import.meta.env.VITE_SITE_NAME}</span>
                     </h4>
                   </a>
                   <div className="row">
