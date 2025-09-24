@@ -39,11 +39,7 @@ const Contact = () => {
             <Header />
             <Breadcrumb title={" Contact Us"} img={'/img/svg/f1.svg'} link={'/contact'} />
 
-            {alert.show && (
-                <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
-                    {alert.message}
-                </div>
-            )}
+
 
 
             <section className="contact" id="contact">
@@ -104,6 +100,11 @@ const Contact = () => {
                     <div className="row">
                         {/* Contact Form */}
                         <div className="col-lg-6">
+                            {alert.show && (
+                                <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
+                                    {alert.message}
+                                </div>
+                            )}
                             <div className="contact-form-wrapper1">
                                 <h3>Have any issue? Feel free to contact with our team (24x7)</h3>
                                 <form onSubmit={handleSubmit} id="form-one1" method='post'>
