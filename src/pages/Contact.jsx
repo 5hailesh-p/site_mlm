@@ -1,16 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Header } from '../compo/Header';
 import Footer from '../compo/Footer';
 import { Link } from 'react-router-dom';
 import Breadcrumb from '../compo/Breadcrumb';
 
+import axios from 'axios'
+
+
 const Contact = () => {
+    const [form, setForm] = useState({ name: '', phone: '', msg: '' });
+    const [alert, setAlert] = useState({ show: false, mmessege: '', type: 'success' });
+
+    useEffect(() => {
+        if (alert.show) {
+            const timer = setTimeout(() => setAlert({ ...alert, show: false }), 3000);
+            return () => clearTimeout(timer);
+        }
+    }, [alert]);
+
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value })
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const res = await axios.post('https://tracequill.com/MlmContact', form);
+            setAlert({ show: true, message: 'Message sent successfully!', type: 'success' });
+            setForm({ name: '', phone: '', msg: '' });
+        } catch (error) {
+            setAlert({ show: true, message: 'Failed to send message.', type: 'danger' });
+        }
+    }
+
+
     return (
         <>
             <Header />
             <Breadcrumb title={" Contact Us"} img={'/img/svg/f1.svg'} link={'/contact'} />
 
-            
+            {alert.show && (
+                <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
+                    {alert.message}
+                </div>
+            )}
+
 
             <section className="contact" id="contact">
                 <div className="container">
@@ -57,7 +91,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="right">
-                                    <div className="content"> 
+                                    <div className="content">
                                         <p>{import.meta.env.VITE_SITE_EMAIL}</p>
                                         <p>{import.meta.env.VITE_SITE_CONTACT}</p>
                                     </div>
@@ -72,17 +106,17 @@ const Contact = () => {
                         <div className="col-lg-6">
                             <div className="contact-form-wrapper1">
                                 <h3>Have any issue? Feel free to contact with our team (24x7)</h3>
-                                <form id="form-one">
+                                <form onSubmit={handleSubmit} id="form-one1" method='post'>
                                     <div id="msg-1"></div>
                                     <div className="row">
                                         <div className="col-md-12">
-                                            <input type="text" name="name" className="input-field bg-light borderd" placeholder="Your Name" required />
+                                            <input type="text" name="name" value={form.name} onChange={handleChange} className="input-field bg-light borderd" placeholder="Your Name" pattern="^[a-zA-Z\s\-]{2,50}$" title="Name should contain only letters, spaces, or hyphens" required />
                                         </div>
                                         <div className="col-md-12">
-                                            <input type="tel" name="mobile" className="input-field bg-light borderd" placeholder="Enter Your Mobile Number" required />
+                                            <input type="tel" name="phone" value={form.phone} onChange={handleChange} className="input-field bg-light borderd" placeholder="Enter Your Mobile Number" required pattern="^\+?[0-9]{10,15}$" title="Phone number must be 10-15 digits, optionally starting with +" />
                                         </div>
                                         <div className="col-12">
-                                            <textarea name="message" className="input-field bg-light borderd textarea" rows="3" placeholder="Write your message here" required></textarea>
+                                            <textarea name="msg" value={form.msg} onChange={handleChange} className="input-field bg-light borderd textarea" rows="3" placeholder="Write your message here" required></textarea>
                                         </div>
                                         <div className="col-12">
                                             <button type="submit" className="mybtn3 mybtn-bg">
