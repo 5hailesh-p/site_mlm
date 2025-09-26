@@ -9,27 +9,33 @@ import axios from 'axios'
 
 const Contact = () => {
     const [form, setForm] = useState({ name: '', phone: '', msg: '' });
-    const [alert, setAlert] = useState({ show: false, mmessege: '', type: 'success' });
+    const [showAlert, setAlert] = useState(false);
 
-    useEffect(() => {
-        if (alert.show) {
-            const timer = setTimeout(() => setAlert({ ...alert, show: false }), 3000);
-            return () => clearTimeout(timer);
-        }
-    }, [alert]);
+    // useEffect(() => {
+    //     if (alert.show) {
+    //         const timer = setTimeout(() => setAlert({ ...alert, show: false }), 3000);
+    //         return () => clearTimeout(timer);
+    //     }
+    // }, [alert]);
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value })
     };
-
+    const handleCloseAlert = () => {
+        setAlert(false);
+    };
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const res = await axios.post('https://tracequill.com/MlmContact', form);
-            setAlert({ show: true, message: 'Message sent successfully!', type: 'success' });
+            console.log(res.data.status);
+            if (res.data.status) {
+                setAlert(true);
+            }
+
             setForm({ name: '', phone: '', msg: '' });
         } catch (error) {
-            setAlert({ show: true, message: 'Failed to send message.', type: 'danger' });
+            // setAlert(true);
         }
     }
 
@@ -100,11 +106,11 @@ const Contact = () => {
                     <div className="row">
                         {/* Contact Form */}
                         <div className="col-lg-6">
-                            {alert.show && (
+                            {/* {alert.show && (
                                 <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
                                     {alert.message}
                                 </div>
-                            )}
+                            )} */}
                             <div className="contact-form-wrapper1">
                                 <h3>Have any issue? Feel free to contact with our team (24x7)</h3>
                                 <form onSubmit={handleSubmit} id="form-one1" method='post'>
@@ -126,6 +132,14 @@ const Contact = () => {
                                         </div>
                                     </div>
                                 </form>
+                                {showAlert && (
+                                    <div className="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                                        <strong>Thank you !</strong> Contact saved successfully.
+                                        <button type="button" className="close" onClick={handleCloseAlert}>
+                                            <span>&times;</span>
+                                        </button>
+                                    </div>
+                                )}
                             </div>
                         </div>
 
