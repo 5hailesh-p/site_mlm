@@ -5,6 +5,38 @@ import { Link } from 'react-router-dom'
 import Breadcrumb from '../compo/Breadcrumb'
 
 const Clients = () => {
+  const clients = [
+    {
+      name:'Ozean AI',
+      img:'c1.png',
+      plan:'Blockchain',
+      loc:'India',
+    },
+    {
+      name:'Afza',
+      img:'c2.jpeg',
+      plan:'E-Commerce',
+      loc:'India',
+    },
+    {
+      name:'Global Invest',
+      img:'c3.png',
+      plan:'MLM',
+      loc:'India',
+    },
+    {
+      name:'Qbid',
+      img:'c4.png',
+      plan:'AD View',
+      loc:'India',
+    },
+    {
+      name:'Nexa Traders',
+      img:'c5.png',
+      plan:'MLM',
+      loc:'India',
+    },
+  ]
   return (
     <>
       <Header />
@@ -20,6 +52,33 @@ const Clients = () => {
           </Link>
           <br />
           <div className="row">
+            { clients.map((items,index)=>(
+              <div className="col-lg-3 col-md-3 col-sm-6">
+              <div className="single-blog client_border"  >
+                <div className="img">
+                  <img src={`/img/logo/${items.img}`} alt={items.name} className='client-img'/>
+                </div>
+                <div className="content text-center text-center">
+                  <ul className="top-meta">
+                    <li>
+                      <p className="date">
+                        {items.plan}
+                      </p>
+                    </li>
+                    <li>
+                      <p className="post-by">
+                        <i className="fas fa-map-marker-alt"></i> {items.loc}
+                      </p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            ))
+
+            }
+
             <div className="col-lg-3 col-md-3 col-sm-6">
               <div className="single-blog client_border"  >
                 <div className="img">

@@ -82,7 +82,6 @@ const Footer = () => {
                         <div className="col-md-4 Footer_head_find Footer_head info_color1">
                             <h3>Know More<br /><span>About Us</span></h3>
                             <p><Link to="/about"><i className="fas fa-chevron-circle-right"></i>&emsp;Know Who we Are!</Link></p>
-                            <p><i className="fas fa-chevron-circle-right"></i>&emsp;Blogs</p>
                             <p><Link to="/contact"><i className="fas fa-chevron-circle-right"></i>&emsp;Contact Us</Link></p>
                             <p><Link to="/privacy"  ><i className="fas fa-chevron-circle-right"></i>&emsp;Privacy Policy</Link></p>
                             <p><Link to="/terms"  ><i className="fas fa-chevron-circle-right"></i>&emsp;Terms and Conditions</Link></p>

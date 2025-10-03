@@ -62,7 +62,7 @@ const Contact = () => {
                                 </div>
                                 <div className="right">
                                     <div className="content">
-                                        <p>Raheja Mindspace, Hi-tech City, Madhapur, Near DELL, Hyderabad - 500081</p>
+                                        <p>{import.meta.env.VITE_SITE_ADDRESS}</p>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                                 </div>
                                 <div className="right">
                                     <div className="content">
-                                        <p>House No 12, Ajanta Path, Basisthpur, Guwahati, Assam -781028</p>
+                                        <p>{import.meta.env.VITE_SITE_ADDRESS}</p>
                                     </div>
                                 </div>
                             </div>

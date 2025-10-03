@@ -4080,3 +4080,8 @@ select:focus {
 .video .tech-style .fun-box .inner-content .icon img{
   width: 40px;
 }
+
+.client-img{
+  aspect-ratio: 2.1;
+  object-fit: contain;
+}
