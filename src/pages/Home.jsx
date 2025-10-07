@@ -1,11 +1,39 @@
 import { Link } from "react-router-dom"
-import { useEffect } from "react"
+import { useEffect,useState } from "react"
 
 import { Header } from "../compo/Header"
 import Footer from "../compo/Footer"
+import axios from 'axios';
 
 export default function Home() {
+    const [formData, setFormData] = useState({
+        name: '',
+        mobile: ''
+    });
 
+    const [message, setMessage] = useState('');
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.post('https://tracequill.com/MlmContact/submit_demo', formData);
+            setMessage('Request submitted successfully!');
+            // Clear form if needed
+            setFormData({ name: '', mobile: '' });
+        } catch (error) {
+            console.error(error);
+            setMessage('There was an error submitting your request.');
+        }
+    };
     useEffect(() => {
 
     }, [])
@@ -71,16 +99,32 @@ export default function Home() {
 
                                         </div>
                                         <div className="newsletter-form-area">
-                                            <form id="form-one">
-                                                <div id="msg-1"></div>
+                                            <form id="form-one" onSubmit={handleSubmit}>
+                                                <div id="msg-1">{message}</div>
                                                 <div className="row">
                                                     <div className="req-edit col-12 col-sm-12 col-md-6 col-lg-5">
-                                                        <input type="text" required name="name" className="form-control border-red" placeholder="Please Enter Your Name" />
+                                                        <input
+                                                            type="text"
+                                                            required
+                                                            name="name"
+                                                            className="form-control border-red"
+                                                            placeholder="Please Enter Your Name"
+                                                            value={formData.name}
+                                                            onChange={handleChange}
+                                                        />
                                                     </div>
                                                     <div className="req-edit col-12 col-sm-12 col-md-6 col-lg-4">
-                                                        <input type="number" required name="mobile" className="form-control border-red" placeholder="Enter Your Contact Number" />
+                                                        <input
+                                                            type="number"
+                                                            required
+                                                            name="mobile"
+                                                            className="form-control border-red"
+                                                            placeholder="Enter Your Contact Number"
+                                                            value={formData.mobile}
+                                                            onChange={handleChange}
+                                                        />
                                                     </div>
-                                                    <div className="col-12 col-sm-12 col-md-6 col-lg-3" style={{ marginBottom: "25px" }}>
+                                                    <div className="col-12 col-sm-12 col-md-6 col-lg-3" style={{ marginBottom: '25px' }}>
                                                         <button type="submit" id="submit-btn-1">
                                                             <span>Request Demo</span> <i className="far fa-paper-plane"></i>
                                                         </button>
@@ -714,7 +758,7 @@ export default function Home() {
 
 
                 {/* <!-- Subscribe Area Start --> */}
-                <div className="subscribe-section">
+                {/* <div className="subscribe-section">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-md-10 col-lg-10">
@@ -729,14 +773,14 @@ export default function Home() {
                         <div className="row justify-content-center">
                             <div className="col-lg-8 col-md-10">
                                 <div className="newsletter-form-area" data-aos="fade-up">
-                                    <form id="form-two">
+                                    <form id="form-two" onSubmit={handleSubmit}>
                                         <div id="msg-2"></div>
                                         <div className="row">
                                             <div className="edit_style col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <input type="text" name="name" required className="form-control border-red" placeholder="Please Enter Your Name" />
+                                                <input type="text" name="name" required className="form-control border-red" placeholder="Please Enter Your Name" value={formData.name} onChange={handleChange} />
                                             </div>
                                             <div className="edit_style col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <input type="number" name="mobile" required className="form-control border-red" placeholder="Enter Your Contact Number" />
+                                                <input type="number" name="mobile" required className="form-control border-red" placeholder="Enter Your Contact Number" value={formData.mobile} onChange={handleChange} />
                                             </div>
 
                                             <div className="edit_style col-12 col-sm-12 col-md-10 col-lg-12">
@@ -752,7 +796,7 @@ export default function Home() {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
                 {/* <!-- Subscribe Area End --> */}
                 <br />
 
