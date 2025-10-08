@@ -117,13 +117,14 @@ export default function Home() {
                                                     </div>
                                                     <div className="req-edit col-12 col-sm-12 col-md-6 col-lg-4">
                                                         <input
-                                                            type="number"
+                                                            type="tel"
                                                             required
                                                             name="phone"
                                                             className="form-control border-red"
                                                             placeholder="Enter Your Contact Number"
                                                             value={formData.phone}
                                                             onChange={handleChange}
+                                                            pattern="^\+?[0-9]{10,15}$" title="Phone number must be 10-15 digits, optionally starting with +" 
                                                         />
                                                     </div>
                                                     <div className="col-12 col-sm-12 col-md-6 col-lg-3" style={{ marginBottom: '25px' }}>
