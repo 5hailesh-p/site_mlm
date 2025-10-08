@@ -63,7 +63,7 @@ export default function Home() {
                                         <p className="subtitle">
                                             We deliver Best MLM software within 48 hours with dedicated server & android app.
                                         </p>
-                                        <div className="links">
+                                        <div className="d-flex flex-column flex-md-row gap-3 links">
                                             <Link to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank" className="mybtn3 mybtn-light"><span  ><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </Link>
                                             <Link to={import.meta.env.VITE_WHATSAPP_URL || "#"} target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </Link>
                                             <Link to="#" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </Link>
