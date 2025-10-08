@@ -12,7 +12,7 @@ const Footer = () => {
                             <div className="footer-info-area">
                                 <div className="footer-logo">
                                     <Link to="/" className="logo-link">
-                                        <img src="https://tracequill.com/assets/img/logoclr.png" alt={import.meta.env.VITE_SITE_NAME} />
+                                        <img src="https://tracequill.com/assets/img/logoclr.png" className="img-thumbnail" alt={import.meta.env.VITE_SITE_NAME} />
                                         {/* <img src="/img/our_logo/logo.png" alt={import.meta.env.VITE_SITE_NAME} /> */}
                                     </Link>
                                 </div>

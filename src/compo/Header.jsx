@@ -22,7 +22,7 @@ export const Header = () => {
                     <div className="col-lg-12 p-0">
                         <nav className="navbar navbar-expand-lg navbar-light">
                             <Link className="navbar-brand" to="/">
-                                <img src="https://tracequill.com/assets/img/logoclr.png" alt={import.meta.env.VITE_SITE_NAME} />
+                                <img className="img-thumbnail" src="https://tracequill.com/assets/img/logoclr.png" alt={import.meta.env.VITE_SITE_NAME} />
                             </Link>
                             <button
                                 className="navbar-toggler"

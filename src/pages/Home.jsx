@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useEffect,useState } from "react"
+import { useEffect, useState } from "react"
 
 import { Header } from "../compo/Header"
 import Footer from "../compo/Footer"
@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function Home() {
     const [formData, setFormData] = useState({
         name: '',
-        mobile: ''
+        phone: ''
     });
 
     const [message, setMessage] = useState('');
@@ -26,9 +26,11 @@ export default function Home() {
 
         try {
             const response = await axios.post('https://tracequill.com/MlmContact/submit_demo', formData);
-            setMessage('Request submitted successfully!');
+            if (response) {
+                setMessage('Request submitted successfully!');
+            }
             // Clear form if needed
-            setFormData({ name: '', mobile: '' });
+            setFormData({ name: '', phone: '' });
         } catch (error) {
             console.error(error);
             setMessage('There was an error submitting your request.');
@@ -117,10 +119,10 @@ export default function Home() {
                                                         <input
                                                             type="number"
                                                             required
-                                                            name="mobile"
+                                                            name="phone"
                                                             className="form-control border-red"
                                                             placeholder="Enter Your Contact Number"
-                                                            value={formData.mobile}
+                                                            value={formData.phone}
                                                             onChange={handleChange}
                                                         />
                                                     </div>
