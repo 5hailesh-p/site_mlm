@@ -17,7 +17,7 @@ const Footer = () => {
                                     </Link>
                                 </div>
                                 <div className="text">
-                                    <span><i className="fas fa-map-marker-alt" style={{ color: "rgba(234, 223, 18, 0.7)" }}> Find Us : </i>&emsp;{import.meta.env.VITE_SITE_ADDRESS}</span>
+                                    <span><i className="fas fa-map-marker-alt" style={{ color: "rgba(234, 223, 18, 1)" }}> Find Us : </i>&emsp;{import.meta.env.VITE_SITE_ADDRESS}</span>
 
                                 </div>
                          

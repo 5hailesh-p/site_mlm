@@ -66,7 +66,7 @@ export default function Home() {
                                         <div className="d-flex flex-column flex-md-row gap-3 links">
                                             <Link to={"tel:" + import.meta.env.VITE_SITE_CONTACT} target="_blank" className="mybtn3 mybtn-light"><span  ><i className="fas fa-phone-volume"></i>&nbsp;Call Us</span> </Link>
                                             <Link to={import.meta.env.VITE_WHATSAPP_URL || "#"} target="_blank" className="mybtn3 mybtn-light"><span><i className="fab fa-whatsapp"></i>&nbsp;Whatsapp</span> </Link>
-                                            <Link to="#" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </Link>
+                                            {/* <Link to="#" target="_blank" className="mybtn3 mybtn-light"><span><i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;View Demo</span> </Link> */}
                                         </div>
 
                                     </div>
@@ -761,7 +761,7 @@ export default function Home() {
 
 
                 {/* <!-- Subscribe Area Start --> */}
-                {/* <div className="subscribe-section">
+                <div className="subscribe-section">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-md-10 col-lg-10">
@@ -783,7 +783,7 @@ export default function Home() {
                                                 <input type="text" name="name" required className="form-control border-red" placeholder="Please Enter Your Name" value={formData.name} onChange={handleChange} />
                                             </div>
                                             <div className="edit_style col-12 col-sm-12 col-md-12 col-lg-12">
-                                                <input type="number" name="mobile" required className="form-control border-red" placeholder="Enter Your Contact Number" value={formData.mobile} onChange={handleChange} />
+                                                <input type="number" name="phone" required className="form-control border-red" placeholder="Enter Your Contact Number" value={formData.phone} onChange={handleChange} />
                                             </div>
 
                                             <div className="edit_style col-12 col-sm-12 col-md-10 col-lg-12">
@@ -799,7 +799,7 @@ export default function Home() {
                         </div>
 
                     </div>
-                </div> */}
+                </div>
                 {/* <!-- Subscribe Area End --> */}
                 <br />
 
