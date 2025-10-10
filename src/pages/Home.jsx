@@ -4,14 +4,25 @@ import { useEffect, useState } from "react"
 import { Header } from "../compo/Header"
 import Footer from "../compo/Footer"
 import axios from 'axios';
+// import Brands from "../compo/Brands";
 
 export default function Home() {
     const [formData, setFormData] = useState({
         name: '',
         phone: ''
     });
+    const [message, setMessage] = useState(false);
+    // Auto-dismiss after 3 seconds
+    useEffect(() => {
+        let timer;
+        if (message) {
+            timer = setTimeout(() => {
+                setMessage(false);
+            }, 3000);
+        }
+        return () => clearTimeout(timer); // cleanup
+    }, [message]);
 
-    const [message, setMessage] = useState('');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -27,13 +38,13 @@ export default function Home() {
         try {
             const response = await axios.post('https://tracequill.com/MlmContact/submit_demo', formData);
             if (response) {
-                setMessage('Request submitted successfully!');
+                setMessage(true);
             }
             // Clear form if needed
             setFormData({ name: '', phone: '' });
         } catch (error) {
             console.error(error);
-            setMessage('There was an error submitting your request.');
+            // setMessage('There was an error submitting your request.');
         }
     };
     useEffect(() => {
@@ -44,7 +55,19 @@ export default function Home() {
         <>
             <Header />
             <div>
-
+                {message && (
+                    <div className="alert alert-success alert-dismissible fade show" role="alert">
+                         Request submitted successfully!
+                        <button
+                            type="button"
+                            className="close"
+                            onClick={() => setMessage(false)}
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                )}
                 <div id="home" className="hero-area">
                     <img className="shape" src="/images/shape-pattern.png" alt="background shape image" />
                     <div className="container">
@@ -124,7 +147,7 @@ export default function Home() {
                                                             placeholder="Enter Your Contact Number"
                                                             value={formData.phone}
                                                             onChange={handleChange}
-                                                            pattern="^\+?[0-9]{10,15}$" title="Phone number must be 10-15 digits, optionally starting with +" 
+                                                            pattern="^\+?[0-9]{10,15}$" title="Phone number must be 10-15 digits, optionally starting with +"
                                                         />
                                                     </div>
                                                     <div className="col-12 col-sm-12 col-md-6 col-lg-3" style={{ marginBottom: '25px' }}>
@@ -812,6 +835,7 @@ export default function Home() {
                     <br /><br />
                 </section>
 
+                {/* <Brands /> */}
 
             </div>
             <Footer />
