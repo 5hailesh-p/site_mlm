@@ -7,6 +7,24 @@ import Breadcrumb from '../compo/Breadcrumb'
 const Clients = () => {
   const clients = [
     {
+      name:'Future SIP Chain',
+      img:'c6.png',
+      plan:'Crypto',
+      loc:'India',
+    },
+    {
+      name:'CryptoFX Trade',
+      img:'c8.png',
+      plan:'Blockchain',
+      loc:'India',
+    },
+    {
+      name:'Irich Coin',
+      img:'c7.png',
+      plan:'Crypto',
+      loc:'India',
+    },
+    {
       name:'Ozean AI',
       img:'c1.png',
       plan:'Blockchain',
